@@ -30,6 +30,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "extend": "^3.0.2",
+    "moment-timezone": "^0.5.32",
     "mustache": "^4.1.0",
     "node-fetch": "^2.6.1"
   }

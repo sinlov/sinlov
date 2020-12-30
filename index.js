@@ -5,6 +5,7 @@ const extend = require('extend');
 const querystring = require('querystring');
 const fetch = require('node-fetch');
 const Mustache = require('mustache');
+const moment = require('moment-timezone');
 
 /**
  * DATA is the object that contains all
@@ -105,10 +106,9 @@ function shieldStaticHTML(info) {
   return `<img alt="${info.label}" src="${urlShieldStatic(info)}"/>`
 }
 
-async function switchThemeByTime() {
-  let date = new Date(),
-    currentHour = date.getHours(),
-    nightModeApplicable = (currentHour >= 22 || currentHour < 7) ? true : false;
+async function switchThemeByTime(timezone = "America/Los_Angeles") {
+  let currentHour = moment().tz(timezone).format('H');
+  let nightModeApplicable = (currentHour >= 22 || currentHour < 7) ? true : false;
   if (nightModeApplicable) {
     DATA.github_readme_stats_url = `https://github-readme-stats.vercel.app/api?username=${DATA.name}&show_icons=true&theme=dracula`
   } else {
@@ -181,7 +181,7 @@ async function action() {
   /**
    * sit different theme of status
    */
-  await switchThemeByTime();
+  await switchThemeByTime(DATA.time_zone);
 
   /**
    * Fetch Weather
