@@ -15,6 +15,8 @@ let code_with_badge_info = JSON.parse(fs.readFileSync('./badge_info.json'));
 
 let DATA = {
   name: 'sinlov',
+  branch: 'main',
+  git_action_status_target: 'build-README.md',
   code_with_badge: code_with_badge_info,
   code_with_list: [],
   lang: 'en',
