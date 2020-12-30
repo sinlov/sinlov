@@ -1,4 +1,4 @@
-<h1><img src="https://emojis.slackmojis.com/emojis/images/1588296824/8820/meowmask.png?1588296824" width="30" />
+<h1><img src="https://emojis.slackmojis.com/emojis/images/1588296824/8820/meowmask.png" width="30" />
   Hey! My name is sinlov, nice to see you !</h1>
 
 <h3>Things I code with</h3>
@@ -6,7 +6,7 @@
 <p>
   <a href="https://git-scm.com/"><img alt="Git" src="https://img.shields.io/badge/-Git-F54D27?logo=Git&logoColor=white&style="/></a>
   <a href="https://docs.github.com/free-pro-team@latest/actions"><img alt="Github Actions" src="https://img.shields.io/badge/-Github Actions-2088FF?logo=github-actions&logoColor=white&style="/></a>
-  <a href="https://travis-ci.com/github/sinlov"><img alt="travis" src="https://img.shields.io/badge/-travis-2DB459?logo=travis%20ci&logoColor=white&style="/></a>
+  <a href="https://travis-ci.com/github/sinlov/sinlov"><img alt="travis" src="https://img.shields.io/badge/-travis-2DB459?logo=travis%20ci&logoColor=white&style="/></a>
   <a href="https://www.tutorialspoint.com/cprogramming/"><img alt="C" src="https://img.shields.io/badge/-C-A8BACC?logo=C&logoColor=white&style="/></a>
   <a href="https://www.cplusplus.com/"><img alt="Cplusplus" src="https://img.shields.io/badge/-Cplusplus-00599C?logo=C%2B%2B&logoColor=white&style="/></a>
   <a href="https://cmake.org/"><img alt="CMake" src="https://img.shields.io/badge/-CMake-064F8C?logo=CMake&logoColor=white&style="/></a>
@@ -46,9 +46,9 @@
 </p>
 
 <p>
-  Today is <b>Thursday, December 31, 4:33 AM GMT+8</b> <br/>
-  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;03n@2x.png" width="20" /> <i>scattered clouds</i>
-    <li>temperature: <b>4°C</b></br></li>
-    <li>wind speed: <b>1</b> meter&#x2F;sec</br></li>
-    <li>sun rises at <b>上午08:00</b> and sets at <b>下午06:12</b></li>
+  Today is <b>Thursday, December 31, 4:58 AM GMT+8</b> <br/>
+  My current city <b>Chengdu, CN</b> weather is: <img src="" width="20" /> <i></i>
+    <li>temperature: <b>°C</b></br></li>
+    <li>wind speed: <b></b> meter&#x2F;sec</br></li>
+    <li>sun rises at <b></b> and sets at <b></b></li>
 </p>

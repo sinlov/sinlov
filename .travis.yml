@@ -1,0 +1,32 @@
+language: node_js
+node_js:
+  - "node"
+  - "lts/*"
+  - "14"
+os:
+  - linux
+  - osx
+  - windows
+
+install:
+- |-
+  case $TRAVIS_OS_NAME in
+    windows)
+      npm install rimraf --global
+      npm run clean:rimraf
+      npm install
+    ;;
+    *)
+      make installGlobal
+      make cleanNpmCache
+      make install
+    ;;
+  esac
+
+cache:
+  directories:
+    - "coverage"
+    # - "node_modules"
+
+script:
+  - npm start
