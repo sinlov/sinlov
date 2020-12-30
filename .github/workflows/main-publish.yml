@@ -31,10 +31,10 @@ jobs:
           OPEN_WEATHER_MAP_KEY: ${{secrets.OPEN_WEATHER_MAP_KEY}}
       - name: Push new README.md
         run: |
-         echo "GITHUB_ACTOR ${GITHUB_ACTOR}"
-         echo "GITHUB_REPOSITORY ${GITHUB_REPOSITORY}"
-         echo "COMMIT_MSG ${COMMIT_MSG}"
-         echo "GITHUB_TOKEN ${GITHUB_TOKEN}"
+         echo "GITHUB_ACTOR -> ${GITHUB_ACTOR}"
+         echo "GITHUB_REPOSITORY -> ${GITHUB_REPOSITORY}"
+         COMMIT_MSG="update README.md by github action"
+         echo "COMMIT_MSG -> ${COMMIT_MSG}"
          # https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
          if [ -z "${secrets.GITHUB_TOKEN}" ]; then
           echo "error: not found env: secrets.GITHUB_TOKEN"
