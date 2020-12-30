@@ -6,7 +6,7 @@
 <p>
   <a href="https://git-scm.com/"><img alt="Git" src="https://img.shields.io/badge/-Git-F54D27?logo=Git&logoColor=white&style="/></a>
   <a href="https://docs.github.com/free-pro-team@latest/actions"><img alt="Github Actions" src="https://img.shields.io/badge/-Github Actions-2088FF?logo=github-actions&logoColor=white&style="/></a>
-  <a href="https://travis-ci.com/github/sinlov/sinlov"><img alt="travis" src="https://img.shields.io/badge/-travis-2DB459?logo=travis%20ci&logoColor=white&style="/></a>
+  <a href="https://travis-ci.com/"><img alt="travis" src="https://img.shields.io/badge/-travis-2DB459?logo=travis%20ci&logoColor=white&style="/></a>
   <a href="https://www.tutorialspoint.com/cprogramming/"><img alt="C" src="https://img.shields.io/badge/-C-A8BACC?logo=C&logoColor=white&style="/></a>
   <a href="https://www.cplusplus.com/"><img alt="Cplusplus" src="https://img.shields.io/badge/-Cplusplus-00599C?logo=C%2B%2B&logoColor=white&style="/></a>
   <a href="https://cmake.org/"><img alt="CMake" src="https://img.shields.io/badge/-CMake-064F8C?logo=CMake&logoColor=white&style="/></a>
@@ -46,9 +46,15 @@
 </p>
 
 <p>
-  Today is <b>Thursday, December 31, 5:14 AM GMT+8</b> <br/>
+  Today is <b>Thursday, December 31, 5:25 AM GMT+8</b> <br/>
   My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;03n@2x.png" width="20" /> <i>scattered clouds</i>
     <li>temperature: <b>4°C</b></br></li>
     <li>wind speed: <b>1</b> meter&#x2F;sec</br></li>
     <li>sun rises at <b>08:00 AM</b> and sets at <b>06:12 PM</b></li>
+</p>
+<p align="right">
+<a href="https://github.com/sinlov/sinlov/actions">
+  <img alt="ruby-macos" src="https://github.com/sinlov/sinlov/workflows/build-README.md/badge.svg?branch=main">
+</a>
+<img alt="travis-ci" src="https://api.travis-ci.com/sinlov/sinlov.svg?branch=main">
 </p>
