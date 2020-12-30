@@ -1,0 +1,25 @@
+<h1><img src="https://emojis.slackmojis.com/emojis/images/1588296824/8820/meowmask.png?1588296824" width="30" />
+  Hey! My name is {{name}}, nice to see you !</h1>
+
+<h3>Things I code with</h3>
+
+<p>
+{{#code_with_list}}
+  {{{.}}}
+{{/code_with_list}}
+{{^code_with_list}}No code_with :({{/code_with_list}}
+</p>
+
+<p align="center">
+  <a href="https://github.com/sinlov">
+    <img src="https://github-readme-stats.vercel.app/api?username={{name}}&show_icons=true&theme=buefy" />
+  </a>
+</p>
+
+<p>
+  Today is <b>{{date}}</b> <br/>
+  My current city <b>{{city}}</b> weather is: <img src="{{city_weather_icon}}" width="20" /> <i>{{city_weather}}</i>
+    <li>temperature: <b>{{city_temperature}}°C</b></br></li>
+    <li>wind speed: <b>{{wind_speed}}</b> {{wind_speed_units}}</br></li>
+    <li>sun rises at <b>{{sun_rise}}</b> and sets at <b>{{sun_set}}</b></li>
+</p>
