@@ -33,8 +33,29 @@ jobs:
         run: |
          echo "GITHUB_ACTOR ${GITHUB_ACTOR}"
          echo "GITHUB_REPOSITORY ${GITHUB_REPOSITORY}"
-         if [ -z "${GITHUB_TOKEN}" ]; then
-          echo "error: not found GITHUB_TOKEN"
+         echo "COMMIT_MSG ${COMMIT_MSG}"
+         echo "GITHUB_TOKEN ${GITHUB_TOKEN}"
+         # https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
+         if [ -z "${secrets.GITHUB_TOKEN}" ]; then
+          echo "error: not found env: secrets.GITHUB_TOKEN"
           exit 1
          fi
-         remote_repo="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+         remote_repo="https://${GITHUB_ACTOR}:${secrets.GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+         git config http.sslVerify false
+         git config user.name "${GITHUB_ACTOR}"
+         git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+         git remote add publisher "${remote_repo}"
+
+         # useful for debugging
+         git show-ref
+         git branch --verbose
+
+         # install lfs hooks
+         git lfs install
+
+         # publish any new files
+         git checkout main
+         git add -A
+         git commit -m "${COMMIT_MSG}" || exit 0
+         git pull --rebase publisher main
+         git push publisher main
