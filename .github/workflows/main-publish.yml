@@ -33,7 +33,7 @@ jobs:
         run: |
          echo "GITHUB_ACTOR -> ${GITHUB_ACTOR}"
          echo "GITHUB_REPOSITORY -> ${GITHUB_REPOSITORY}"
-         COMMIT_MSG="update README.md by github action"
+         COMMIT_MSG="update README.md by github action at cron set"
          if [ -z "${COMMIT_MSG}" ]; then
           echo "error: not found env: COMMIT_MSG"
           exit 1
