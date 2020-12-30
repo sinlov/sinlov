@@ -1,0 +1,21 @@
+## 1.0.0 (2020-12-30)
+
+* feat: add city feels like temperature ([2315eda](https://github.com/sinlov/sinlov/commit/2315eda))
+* feat: add missing env COMMIT_MSG ([b3c158e](https://github.com/sinlov/sinlov/commit/b3c158e))
+* feat: add new cat image ([3042e69](https://github.com/sinlov/sinlov/commit/3042e69))
+* feat: add switchThemeByTime for different time of show status ([1f2c0fa](https://github.com/sinlov/sinlov/commit/1f2c0fa))
+* feat: add travis-ci build status image link ([a79a391](https://github.com/sinlov/sinlov/commit/a79a391))
+* feat: can use weather api to auto choose show theme of stats ([ee9c484](https://github.com/sinlov/sinlov/commit/ee9c484))
+* feat: change badge info to json and add travis build config ([59b6d6a](https://github.com/sinlov/sinlov/commit/59b6d6a))
+* feat: let switchThemeByTime support timezone set ([e5a9347](https://github.com/sinlov/sinlov/commit/e5a9347))
+* feat: let weather show more things ([b311c22](https://github.com/sinlov/sinlov/commit/b311c22))
+* feat: try to fix GITHUB_TOKEN code ([0add7c3](https://github.com/sinlov/sinlov/commit/0add7c3))
+* feat: update main-publish.yml GITHUB_TOKEN get and try to push new READM.md ([77f818a](https://github.com/sinlov/sinlov/commit/77f818a))
+* add build status of page bottom|right ([898714d](https://github.com/sinlov/sinlov/commit/898714d))
+* add env test of github action ([6755e80](https://github.com/sinlov/sinlov/commit/6755e80))
+* Create main-publish.yml ([24204c4](https://github.com/sinlov/sinlov/commit/24204c4))
+* first commit ([d11a846](https://github.com/sinlov/sinlov/commit/d11a846))
+* update travis script for cache npm ([5f80818](https://github.com/sinlov/sinlov/commit/5f80818))
+
+
+
