@@ -41,12 +41,12 @@
 
 <p align="center">
   <a href="https://github.com/sinlov">
-    <img src="https://github-readme-stats.vercel.app/api?username=sinlov&show_icons=true&theme=buefy" />
+    <img src="https:&#x2F;&#x2F;github-readme-stats.vercel.app&#x2F;api?username&#x3D;sinlov&amp;show_icons&#x3D;true&amp;theme&#x3D;buefy" />
   </a>
 </p>
 
 <p>
-  Today is <b>Thursday, December 31, 5:25 AM GMT+8</b> <br/>
+  Today is <b>Thursday, December 31, 5:41 AM GMT+8</b> <br/>
   My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;03n@2x.png" width="20" /> <i>scattered clouds</i>
     <li>temperature: <b>4°C</b></br></li>
     <li>wind speed: <b>1</b> meter&#x2F;sec</br></li>
