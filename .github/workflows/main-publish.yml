@@ -34,13 +34,13 @@ jobs:
          echo "GITHUB_ACTOR -> ${GITHUB_ACTOR}"
          echo "GITHUB_REPOSITORY -> ${GITHUB_REPOSITORY}"
          COMMIT_MSG="update README.md by github action"
-         echo "COMMIT_MSG -> ${COMMIT_MSG}"
-         # https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
-         if [ -z "${secrets.GITHUB_TOKEN}" ]; then
-          echo "error: not found env: secrets.GITHUB_TOKEN"
+         if [ -z "${COMMIT_MSG}" ]; then
+          echo "error: not found env: COMMIT_MSG"
           exit 1
          fi
-         remote_repo="https://${GITHUB_ACTOR}:${secrets.GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+         echo "COMMIT_MSG -> ${COMMIT_MSG}"
+         # https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
+         remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
          git config http.sslVerify false
          git config user.name "${GITHUB_ACTOR}"
          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
