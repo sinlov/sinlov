@@ -1,4 +1,4 @@
-name: README.md build at main
+name: build-README.md
 
 on:
   push:
@@ -29,3 +29,12 @@ jobs:
         run: npm start
         env:
           OPEN_WEATHER_MAP_KEY: ${{secrets.OPEN_WEATHER_MAP_KEY}}
+      - name: Push new README.md
+        run: |
+         echo "GITHUB_ACTOR ${GITHUB_ACTOR}"
+         echo "GITHUB_REPOSITORY ${GITHUB_REPOSITORY}"
+         if [ -z "${GITHUB_TOKEN}" ]; then
+          echo "error: not found GITHUB_TOKEN"
+          exit 1
+         fi
+         remote_repo="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"

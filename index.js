@@ -347,7 +347,6 @@ async function setWeatherInformation(city, appid, lang, units) {
     return
   }
   let openweathermap_url = `https://api.openweathermap.org/data/2.5/weather?${querystring.stringify({q:city})}&appid=${appid}&lang=${lang}&units=${units}`
-  console.log('openweathermap_url', openweathermap_url);
   await fetch(openweathermap_url)
     .then(r => r.json())
     .then(r => {
