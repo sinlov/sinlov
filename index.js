@@ -105,6 +105,18 @@ function shieldStaticHTML(info) {
   return `<img alt="${info.label}" src="${urlShieldStatic(info)}"/>`
 }
 
+async function switchThemeByTime() {
+  let date = new Date(),
+    currentHour = date.getHours(),
+    nightModeApplicable = (currentHour >= 22 || currentHour < 7) ? true : false;
+  if (nightModeApplicable) {
+    DATA.github_readme_stats_url = `https://github-readme-stats.vercel.app/api?username=${DATA.name}&show_icons=true&theme=dracula`
+  } else {
+    DATA.github_readme_stats_url = `https://github-readme-stats.vercel.app/api?username=${DATA.name}&show_icons=true&theme=buefy`
+  }
+}
+
+
 async function getImgShields() {
   if (DATA.code_with_badge) {
     for (let i in DATA.code_with_badge) {
@@ -165,6 +177,11 @@ async function action() {
 
   /** get image shields */
   await getImgShields();
+
+  /**
+   * sit different theme of status
+   */
+  await switchThemeByTime();
 
   /**
    * Fetch Weather
