@@ -132,6 +132,7 @@ async function setWeatherInformation(city, appid, lang, units) {
     .then(r => {
       DATA.city_temperature = r.main.temp.toFixed(1);
       DATA.city_feels_like = r.main.feels_like.toFixed(1);
+      DATA.city_humidity = r.main.humidity;
       DATA.city_weather_icon = `http://openweathermap.org/img/wn/${r.weather[0].icon}@2x.png`;
       DATA.city_weather = r.weather[0].description;
       DATA.wind_speed = r.wind.speed;

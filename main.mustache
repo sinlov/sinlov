@@ -19,14 +19,13 @@
 <p>
   Today is <b>{{date}}</b> <br />
   My current city <b>{{city}}</b> weather is: <img src="{{city_weather_icon}}" width="20" /> <i>{{city_weather}}</i>
-  <li>temperature: <b>{{city_temperature}} °C</b></br></li>
-  <li>feels like: <b>{{city_feels_like}} °C</b></br></li>
-  <li>wind speed: <b>{{wind_speed}}</b> {{wind_speed_units}}</br></li>
-  <li>sun rises at <b>{{sun_rise}}</b> and sets at <b>{{sun_set}}</b></li>
+  <li>temperature : <b>{{city_temperature}} °C</b> , feels like  : <b>{{city_feels_like}} °C</b></br></li>
+  <li>humidity    : <b>{{city_humidity}}%</b> , wind speed  : <b>{{wind_speed}} {{wind_speed_units}}</b></br></li>
+  <li>sun rises at: <b>{{sun_rise}}</b> and sets at: <b>{{sun_set}}</b></li>
 </p>
 <p align="right">
   <a href="https://github.com/{{name}}/{{name}}/actions">
-    <img alt="ruby-macos"
+    <img alt="{{git_action_status_target}}"
       src="https://github.com/{{name}}/{{name}}/workflows/{{git_action_status_target}}/badge.svg?branch={{branch}}">
   </a>
   <a href="https://travis-ci.com/github/{{name}}/{{name}}">
