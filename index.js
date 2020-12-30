@@ -130,7 +130,8 @@ async function setWeatherInformation(city, appid, lang, units) {
   await fetch(openweathermap_url)
     .then(r => r.json())
     .then(r => {
-      DATA.city_temperature = Math.round(r.main.temp);
+      DATA.city_temperature = r.main.temp.toFixed(1);
+      DATA.city_feels_like = r.main.feels_like.toFixed(1);
       DATA.city_weather_icon = `http://openweathermap.org/img/wn/${r.weather[0].icon}@2x.png`;
       DATA.city_weather = r.weather[0].description;
       DATA.wind_speed = r.wind.speed;
