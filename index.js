@@ -106,16 +106,6 @@ function shieldStaticHTML(info) {
   return `<img alt="${info.label}" src="${urlShieldStatic(info)}"/>`
 }
 
-async function switchThemeByTime(timezone = "America/Los_Angeles") {
-  let currentHour = moment().tz(timezone).format('H');
-  let nightModeApplicable = (currentHour >= 22 || currentHour < 7) ? true : false;
-  if (nightModeApplicable) {
-    DATA.github_readme_stats_url = `https://github-readme-stats.vercel.app/api?username=${DATA.name}&show_icons=true&theme=dracula`
-  } else {
-    DATA.github_readme_stats_url = `https://github-readme-stats.vercel.app/api?username=${DATA.name}&show_icons=true&theme=buefy`
-  }
-}
-
 
 async function getImgShields() {
   if (DATA.code_with_badge) {
@@ -144,17 +134,38 @@ async function setWeatherInformation(city, appid, lang, units) {
       DATA.city_weather_icon = `http://openweathermap.org/img/wn/${r.weather[0].icon}@2x.png`;
       DATA.city_weather = r.weather[0].description;
       DATA.wind_speed = r.wind.speed;
+      DATA.sun_rise_timestamp = r.sys.sunrise * 1000;
       DATA.sun_rise = new Date(r.sys.sunrise * 1000).toLocaleString(DATA.i18n_name, {
         hour: '2-digit',
         minute: '2-digit',
         timeZone: DATA.time_zone,
       });
+      DATA.sun_set_timestamp = r.sys.sunset * 1000;
       DATA.sun_set = new Date(r.sys.sunset * 1000).toLocaleString(DATA.i18n_name, {
         hour: '2-digit',
         minute: '2-digit',
         timeZone: DATA.time_zone,
       });
     });
+}
+
+async function switchThemeByTime(timezone = "America/Los_Angeles", sun_rise_timestamp = 0, sun_set_timestamp = 0) {
+  let sun_rise = 7;
+  if (sun_rise_timestamp != 0) {
+    sun_rise = moment(sun_rise_timestamp).tz(timezone).format('H');
+  }
+  let sun_set = 22;
+  if (sun_set_timestamp != 0) {
+    sun_set = moment(sun_set_timestamp).tz(timezone).format('H');
+  }
+  // console.log(sun_rise, sun_set);
+  let currentHour = moment().tz(timezone).format('H');
+  let nightModeApplicable = (currentHour >= sun_set || currentHour < sun_rise) ? true : false;
+  if (nightModeApplicable) {
+    DATA.github_readme_stats_url = `https://github-readme-stats.vercel.app/api?username=${DATA.name}&show_icons=true&theme=dracula`
+  } else {
+    DATA.github_readme_stats_url = `https://github-readme-stats.vercel.app/api?username=${DATA.name}&show_icons=true&theme=buefy`
+  }
 }
 
 // async function setInstagramPosts() {
@@ -179,17 +190,17 @@ async function action() {
   await getImgShields();
 
   /**
-   * sit different theme of status
-   */
-  await switchThemeByTime(DATA.time_zone);
-
-  /**
    * Fetch Weather
    * must load env as OPEN_WEATHER_MAP_KEY
    */
   if (process.env.OPEN_WEATHER_MAP_KEY) {
     await setWeatherInformation(DATA.city, process.env.OPEN_WEATHER_MAP_KEY, DATA.lang, DATA.units);
   }
+
+  /**
+   * sit different theme of status
+   */
+  await switchThemeByTime(DATA.time_zone, DATA.sun_rise_timestamp, DATA.sun_set_timestamp);
 
   /**
    * Generate README
