@@ -6,7 +6,6 @@
 <p>
   <a href="https://git-scm.com/"><img alt="Git" src="https://img.shields.io/badge/-Git-F54D27?logo=Git&logoColor=white&style="/></a>
   <a href="https://docs.github.com/free-pro-team@latest/actions"><img alt="Github Actions" src="https://img.shields.io/badge/-Github Actions-2088FF?logo=github-actions&logoColor=white&style="/></a>
-  <a href="https://travis-ci.com/"><img alt="travis" src="https://img.shields.io/badge/-travis-2DB459?logo=travis%20ci&logoColor=white&style="/></a>
   <a href="https://www.tutorialspoint.com/cprogramming/"><img alt="C" src="https://img.shields.io/badge/-C-A8BACC?logo=C&logoColor=white&style="/></a>
   <a href="https://www.cplusplus.com/"><img alt="Cplusplus" src="https://img.shields.io/badge/-Cplusplus-00599C?logo=C%2B%2B&logoColor=white&style="/></a>
   <a href="https://cmake.org/"><img alt="CMake" src="https://img.shields.io/badge/-CMake-064F8C?logo=CMake&logoColor=white&style="/></a>
@@ -46,18 +45,15 @@
 </p>
 
 <p>
-  Today is <b>Thursday, December 31, 11:16 PM GMT+8</b> <br />
+  Today is <b>Friday, January 1, 1:14 AM GMT+8</b> <br />
   My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;01n@2x.png" width="20" /> <i>clear sky</i>
-  <li>temperature : <b>5.5 °C</b> , feels like  : <b>3.1 °C</b></br></li>
-  <li>humidity    : <b>62%</b> , wind speed  : <b>0.44 meter&#x2F;sec</b></br></li>
-  <li>sun rises at: <b>08:00 AM</b> , sets at: <b>06:12 PM</b></li>
+  <li>temperature : <b>5.0 °C</b> , feels like  : <b>2.1 °C</b></br></li>
+  <li>humidity    : <b>86%</b> , wind speed  : <b>2 meter&#x2F;sec</b></br></li>
+  <li>sun rises at: <b>08:01 AM</b> , sets at: <b>06:13 PM</b></li>
 </p>
 <p align="right">
   <a href="https://github.com/sinlov/sinlov/actions">
     <img alt="build-README.md"
       src="https://github.com/sinlov/sinlov/workflows/build-README.md/badge.svg?branch=main">
-  </a>
-  <a href="https://travis-ci.com/github/sinlov/sinlov">
-    <img alt="travis-ci" src="https://api.travis-ci.com/sinlov/sinlov.svg?branch=main">
   </a>
 </p>
