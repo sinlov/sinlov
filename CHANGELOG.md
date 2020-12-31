@@ -1,8 +1,11 @@
+## 1.2.0 (2020-12-31)
+
+* feat: add show_travis config to show build status and remove badge of travis ([9e5ed64](https://github.com/sinlov/sinlov/commit/9e5ed64))
+
 ## 1.1.0 (2020-12-31)
 
 * add weather data cache ([ba2ec9f](https://github.com/sinlov/sinlov/commit/ba2ec9f))
 * filter config Separate configuration files and add check of config ([de55e3a](https://github.com/sinlov/sinlov/commit/de55e3a))
-
 
 
 ## 1.0.0 (2020-12-30)
