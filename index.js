@@ -20,6 +20,7 @@ let DATA = {
   units: 'metric',
   wind_speed_units: 'meter/sec',
   git_action_main_publish_name: 'build-README.md',
+  show_travis: false,
   code_with_list: []
 };
 

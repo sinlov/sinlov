@@ -28,7 +28,9 @@
     <img alt="{{git_action_main_publish_name}}"
       src="https://github.com/{{name}}/{{name}}/workflows/{{git_action_main_publish_name}}/badge.svg?branch={{branch}}">
   </a>
+  {{#show_travis}}
   <a href="https://travis-ci.com/github/{{name}}/{{name}}">
     <img alt="travis-ci" src="https://api.travis-ci.com/{{name}}/{{name}}.svg?branch={{branch}}">
   </a>
+  {{/show_travis}}
 </p>
