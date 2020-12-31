@@ -1,3 +1,10 @@
+## 1.1.0 (2020-12-31)
+
+* add weather data cache ([ba2ec9f](https://github.com/sinlov/sinlov/commit/ba2ec9f))
+* filter config Separate configuration files and add check of config ([de55e3a](https://github.com/sinlov/sinlov/commit/de55e3a))
+
+
+
 ## 1.0.0 (2020-12-30)
 
 * feat: add city feels like temperature ([2315eda](https://github.com/sinlov/sinlov/commit/2315eda))

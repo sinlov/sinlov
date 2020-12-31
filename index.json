@@ -1,0 +1,10 @@
+{
+  "branch": "main",
+  "city": "Chengdu, CN",
+  "git_action_main_publish_name": "build-README.md",
+  "lang": "en",
+  "i18n_name": "en-US",
+  "time_zone": "Asia/Shanghai",
+  "units": "metric",
+  "wind_speed_units": "meter/sec"
+}

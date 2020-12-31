@@ -28,6 +28,7 @@ jobs:
       - name: Generate README file
         run: npm start
         env:
+          RUN_MODE: ${{secrets.RUN_MODE}}
           OPEN_WEATHER_MAP_KEY: ${{secrets.OPEN_WEATHER_MAP_KEY}}
       - name: Push new README.md
         run: |

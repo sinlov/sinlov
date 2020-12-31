@@ -1,41 +1,74 @@
 require('dotenv').config();
 
 const fs = require('fs');
+const fs_path = require('path');
 const extend = require('extend');
 const querystring = require('querystring');
 const fetch = require('node-fetch');
 const Mustache = require('mustache');
 const moment = require('moment-timezone');
+var fsUtils = require("nodejs-fs-utils");
+
+/**
+ * default setting at here
+ */
+let DATA = {
+  branch: 'main',
+  lang: 'en',
+  i18n_name: 'en-US',
+  time_zone: 'Asia/Shanghai',
+  units: 'metric',
+  wind_speed_units: 'meter/sec',
+  git_action_main_publish_name: 'build-README.md',
+  code_with_list: []
+};
 
 /**
  * DATA is the object that contains all
  * the data to be provided to Mustache.
  */
 const MUSTACHE_MAIN_DIR = './main.mustache';
-let code_with_badge_info = JSON.parse(fs.readFileSync('./badge_info.json'));
 
-let DATA = {
-  name: 'sinlov',
-  branch: 'main',
-  git_action_status_target: 'build-README.md',
-  code_with_badge: code_with_badge_info,
-  code_with_list: [],
-  lang: 'en',
-  i18n_name: 'en-US',
-  time_zone: 'Asia/Shanghai',
-  city: 'Chengdu, CN',
-  units: 'metric',
-  wind_speed_units: 'meter/sec',
-  date: new Date().toLocaleDateString('en-US', {
+async function mergeConfig() {
+  let code_with_badge_info = JSON.parse(fs.readFileSync('./badge_info.json'));
+  let index_config = JSON.parse(fs.readFileSync('./index.json'));
+  extend(DATA, index_config);
+  DATA.code_with_badge = code_with_badge_info;
+  DATA.date = new Date().toLocaleDateString(DATA.i18n_name, {
     weekday: 'long',
     month: 'long',
     day: 'numeric',
     hour: 'numeric',
     minute: 'numeric',
     timeZoneName: 'short',
-    timeZone: 'Asia/Shanghai',
+    timeZone: DATA.time_zone
   })
-};
+
+  if (process.env.GITHUB_ACTOR) {
+    DATA.name = process.env.GITHUB_ACTOR
+  }
+
+  if (process.env.CITY_NAME) {
+    DATA.city = process.env.CITY_NAME
+  }
+
+  if (process.env.RUN_MODE && process.env.RUN_MODE !== 'prod') {
+    console.log('merge DATA', JSON.stringify(DATA));
+  }
+
+  if (!DATA.name) {
+    console.log(new Error('error: index.json not set name, or not set env GITHUB_ACTOR, this env will auto include when run as github action.'));
+    process.exit(128);
+  }
+
+  if (!DATA.city) {
+    console.log(new Error('error: index.json not set city, or not set env CITY_NAME'));
+    process.exit(128);
+  }
+  if (!process.env.OPEN_WEATHER_MAP_KEY) {
+    console.log('Warning not set env OPEN_WEATHER_MAP_KEY , please add as https://home.openweathermap.org/api_keys');
+  }
+}
 
 /**
  * https://img.shields.io/ get image of badge
@@ -126,6 +159,30 @@ async function setWeatherInformation(city, appid, lang, units) {
   if (!appid) {
     return
   }
+
+  async function save_weather_data(data) {
+    let date_f = moment().tz(DATA.time_zone);
+    let saveDir = fs_path.resolve(fs_path.join('.', 'weather_data', date_f.format('yyyy'), date_f.format('MM'), date_f.format('DD')));
+    if (!fs.existsSync(saveDir)) {
+      // console.log(`saveDir ennd mkdir ${saveDir}`);
+      fsUtils.mkdirsSync(saveDir);
+    }
+    let saveFile = fs_path.join(saveDir, `weather-data-${date_f.format('yyyy')}-${date_f.format('MM')}-${date_f.format('DD')}.json`);
+    // console.log(saveFile);
+    let saveData = [];
+    if (fs.existsSync(saveFile)) {
+      let old = JSON.parse(fs.readFileSync(saveFile));
+      for (i in old) {
+        saveData.push(old[i]);
+      }
+    }
+    saveData.push({
+      date: moment().format(),
+      weather: data
+    });
+    fs.writeFileSync(saveFile, JSON.stringify(saveData, null, 2));
+  }
+
   let openweathermap_url = `https://api.openweathermap.org/data/2.5/weather?${querystring.stringify({q:city})}&appid=${appid}&lang=${lang}&units=${units}`
   await fetch(openweathermap_url)
     .then(r => r.json())
@@ -148,20 +205,21 @@ async function setWeatherInformation(city, appid, lang, units) {
         minute: '2-digit',
         timeZone: DATA.time_zone,
       });
+      save_weather_data(r);
     });
 }
 
 async function switchThemeByTime(timezone = "America/Los_Angeles", sun_rise_timestamp = 0, sun_set_timestamp = 0) {
   let sun_rise = 7;
   if (sun_rise_timestamp != 0) {
-    sun_rise = moment(sun_rise_timestamp).tz(timezone).format('H');
+    sun_rise = Number(moment(sun_rise_timestamp).tz(timezone).format('H'));
   }
   let sun_set = 22;
   if (sun_set_timestamp != 0) {
-    sun_set = moment(sun_set_timestamp).tz(timezone).format('H');
+    sun_set = Number(moment(sun_set_timestamp).tz(timezone).format('H'));
   }
-  // console.log(sun_rise, sun_set);
   let currentHour = moment().tz(timezone).format('H');
+  // console.log('sun_rise', sun_rise, 'sun_set', sun_set, 'currentHour', currentHour, currentHour >= sun_set, currentHour < sun_rise);
   let nightModeApplicable = (currentHour >= sun_set || currentHour < sun_rise) ? true : false;
   if (nightModeApplicable) {
     DATA.github_readme_stats_url = `https://github-readme-stats.vercel.app/api?username=${DATA.name}&show_icons=true&theme=dracula`
@@ -186,7 +244,15 @@ function generateReadMe() {
 }
 
 
+/**
+ * do github action
+ */
 async function action() {
+
+  /**
+   * first merge config
+   */
+  await mergeConfig();
 
   /** get image shields */
   await getImgShields();
