@@ -1,5 +1,5 @@
-<h1><img src="https://emojis.slackmojis.com/emojis/images/1588296824/8820/meowmask.png" width="30" />
-  Hey! My name is sinlov, nice to see you !</h1>
+<h1>Hey! <img src="https://emojis.slackmojis.com/emojis/images/1586280906/8541/computercat.gif" width="30" />
+  My name is sinlov, nice to see you !</h1>
 
 <h3>Things I code with</h3>
 
@@ -41,16 +41,16 @@
 
 <p align="center">
   <a href="https://github.com/sinlov">
-    <img src="https:&#x2F;&#x2F;github-readme-stats.vercel.app&#x2F;api?username&#x3D;sinlov&amp;show_icons&#x3D;true&amp;theme&#x3D;dracula" />
+    <img src="https://github-readme-stats.vercel.app/api?username=sinlov&show_icons=true&theme=buefy" />
   </a>
 </p>
 
 <p>
-  Today is <b>Thursday, December 31, 6:46 AM GMT+8</b> <br />
-  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;03n@2x.png" width="20" /> <i>scattered clouds</i>
-  <li>temperature : <b>3.5 °C</b> , feels like  : <b>1.2 °C</b></br></li>
-  <li>humidity    : <b>93%</b> , wind speed  : <b>1 meter&#x2F;sec</b></br></li>
-  <li>sun rises at: <b>08:00 AM</b> and sets at: <b>06:12 PM</b></li>
+  Today is <b>Thursday, December 31, 3:03 PM GMT+8</b> <br />
+  My current city <b>Chengdu, CN</b> weather is: <img src="" width="20" /> <i></i>
+  <li>temperature : <b> °C</b> , feels like  : <b> °C</b></br></li>
+  <li>humidity    : <b>%</b> , wind speed  : <b> meter&#x2F;sec</b></br></li>
+  <li>sun rises at: <b></b> , sets at: <b></b></li>
 </p>
 <p align="right">
   <a href="https://github.com/sinlov/sinlov/actions">
