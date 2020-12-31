@@ -36,7 +36,7 @@
   <a href="https://flutter.dev/"><img alt="Flutter" src="https://img.shields.io/badge/-Flutter-02569B?logo=Flutter&logoColor=white&style="/></a>
   <a href="https://docs.microsoft.com/dotnet/csharp/"><img alt="Csharp" src="https://img.shields.io/badge/-Csharp-239120?logo=C%20sharp&logoColor=white&style="/></a>
   <a href="https://unity.com/"><img alt="Unity" src="https://img.shields.io/badge/-Unity-000000?logo=Unity&logoColor=white&style="/></a>
-
+  
 </p>
 
 <p align="center">
@@ -46,11 +46,11 @@
 </p>
 
 <p>
-  Today is <b>Thursday, December 31, 3:03 PM GMT+8</b> <br />
-  My current city <b>Chengdu, CN</b> weather is: <img src="" width="20" /> <i></i>
-  <li>temperature : <b> °C</b> , feels like  : <b> °C</b></br></li>
-  <li>humidity    : <b>%</b> , wind speed  : <b> meter&#x2F;sec</b></br></li>
-  <li>sun rises at: <b></b> , sets at: <b></b></li>
+  Today is <b>Thursday, December 31, 4:02 PM GMT+8</b> <br />
+  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;02d@2x.png" width="20" /> <i>few clouds</i>
+  <li>temperature : <b>8.9 °C</b> , feels like  : <b>5.3 °C</b></br></li>
+  <li>humidity    : <b>48%</b> , wind speed  : <b>2 meter&#x2F;sec</b></br></li>
+  <li>sun rises at: <b>08:00 AM</b> , sets at: <b>06:12 PM</b></li>
 </p>
 <p align="right">
   <a href="https://github.com/sinlov/sinlov/actions">
