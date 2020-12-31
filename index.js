@@ -1,11 +1,13 @@
 require('dotenv').config();
 
 const fs = require('fs');
+const fs_path = require('path');
 const extend = require('extend');
 const querystring = require('querystring');
 const fetch = require('node-fetch');
 const Mustache = require('mustache');
 const moment = require('moment-timezone');
+var fsUtils = require("nodejs-fs-utils");
 
 /**
  * default setting at here
@@ -157,6 +159,30 @@ async function setWeatherInformation(city, appid, lang, units) {
   if (!appid) {
     return
   }
+
+  async function save_weather_data(data) {
+    let date_f = moment().tz(DATA.time_zone);
+    let saveDir = fs_path.resolve(fs_path.join('.', 'weather_data', date_f.format('yyyy'), date_f.format('MM'), date_f.format('DD')));
+    if (!fs.existsSync(saveDir)) {
+      console.log(`saveDir ennd mkdir ${saveDir}`);
+      fsUtils.mkdirsSync(saveDir);
+    }
+    let saveFile = fs_path.join(saveDir, `weather-data-${date_f.format('yyyy')}-${date_f.format('MM')}-${date_f.format('DD')}.json`);
+    console.log(saveFile);
+    let saveData = [];
+    if (fs.existsSync(saveFile)) {
+      let old = JSON.parse(fs.readFileSync(saveFile));
+      for (i in old) {
+        saveData.push(old[i]);
+      }
+    }
+    saveData.push({
+      date: moment().format(),
+      weather: data
+    });
+    fs.writeFileSync(saveFile, JSON.stringify(saveData, null, 2));
+  }
+
   let openweathermap_url = `https://api.openweathermap.org/data/2.5/weather?${querystring.stringify({q:city})}&appid=${appid}&lang=${lang}&units=${units}`
   await fetch(openweathermap_url)
     .then(r => r.json())
@@ -179,6 +205,7 @@ async function setWeatherInformation(city, appid, lang, units) {
         minute: '2-digit',
         timeZone: DATA.time_zone,
       });
+      save_weather_data(r);
     });
 }
 
