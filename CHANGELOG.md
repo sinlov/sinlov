@@ -1,3 +1,7 @@
+## 1.3.0 (2021-01-03)
+
+* feat: add wakatime at workflow ([004373f](https://github.com/sinlov/sinlov/commit/004373f))
+
 ## 1.2.0 (2020-12-31)
 
 * feat: add show_travis config to show build status and remove badge of travis ([9e5ed64](https://github.com/sinlov/sinlov/commit/9e5ed64))
