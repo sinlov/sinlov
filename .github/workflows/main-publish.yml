@@ -30,6 +30,10 @@ jobs:
         env:
           RUN_MODE: ${{secrets.RUN_MODE}}
           OPEN_WEATHER_MAP_KEY: ${{secrets.OPEN_WEATHER_MAP_KEY}}
+      - name: update by athul/waka-readme
+        uses: athul/waka-readme@v0.1.5
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
       - name: Push new README.md
         run: |
          echo "GITHUB_ACTOR -> ${GITHUB_ACTOR}"
