@@ -54,7 +54,11 @@
 
 <!--START_SECTION:waka-->
 ```text
-No Activity tracked this Week
+Ruby       1 hr 26 mins    ███████████░░░░░░░░░░░░░░   43.62 % 
+Other      1 hr 16 mins    █████████▓░░░░░░░░░░░░░░░   38.26 % 
+Go         31 mins         ████░░░░░░░░░░░░░░░░░░░░░   16.02 % 
+Markdown   1 min           ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.95 % 
+Java       1 min           ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.75 % 
 ```
 <!--END_SECTION:waka-->
 
