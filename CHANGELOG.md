@@ -1,3 +1,7 @@
+## 1.4.0 (2021-01-05)
+
+* feat: change workflow to different cron set for update README.md ([fa7042f](https://github.com/sinlov/sinlov/commit/fa7042f))
+
 ## 1.3.0 (2021-01-03)
 
 * feat: add wakatime at workflow ([004373f](https://github.com/sinlov/sinlov/commit/004373f))
