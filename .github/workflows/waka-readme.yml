@@ -1,40 +1,28 @@
-name: build-README.md
+name: waka-readme
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
   schedule:
-    - cron: '0 */3 * * *'
+    # Runs at 12am UTC
+    - cron: '0 0 * * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout
-        uses: actions/checkout@v1
-      - name: setup node
-        uses: actions/setup-node@v1
+      - name: update by athul/waka-readme
+        uses: athul/waka-readme@v0.1.5
         with:
-          node-version: '13.x'
-      - name: cache
-        uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-js-${{ hashFiles('package-lock.json') }}
-      - name: Install dependencies
-        run: npm install
-      - name: Generate README file
-        run: npm start
-        env:
-          RUN_MODE: ${{secrets.RUN_MODE}}
-          OPEN_WEATHER_MAP_KEY: ${{secrets.OPEN_WEATHER_MAP_KEY}}
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
       - name: Push new README.md
         run: |
          echo "GITHUB_ACTOR -> ${GITHUB_ACTOR}"
          echo "GITHUB_REPOSITORY -> ${GITHUB_REPOSITORY}"
-         COMMIT_MSG="update README.md data of weather, by github action at cron set"
+         COMMIT_MSG="update README.md data of waka, by github action at cron set"
          if [ -z "${COMMIT_MSG}" ]; then
           echo "error: not found env: COMMIT_MSG"
           exit 1
