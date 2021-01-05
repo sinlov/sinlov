@@ -45,7 +45,7 @@
 </p>
 
 <p>
-  Today is <b>Tuesday, January 5, 7:58 PM GMT+8</b> <br />
+  Today is <b>Tuesday, January 5, 8:20 PM GMT+8</b> <br />
   My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;03n@2x.png" width="20" /> <i>scattered clouds</i>
   <li>temperature : <b>8.8 °C</b> , feels like  : <b>4.2 °C</b></br></li>
   <li>humidity    : <b>57%</b> , wind speed  : <b>4 meter&#x2F;sec</b></br></li>
@@ -53,13 +53,6 @@
 </p>
 
 <!--START_SECTION:waka-->
-```text
-Ruby       1 hr 26 mins    ███████████░░░░░░░░░░░░░░   43.62 % 
-Other      1 hr 16 mins    █████████▓░░░░░░░░░░░░░░░   38.26 % 
-Go         31 mins         ████░░░░░░░░░░░░░░░░░░░░░   16.02 % 
-Markdown   1 min           ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.95 % 
-Java       1 min           ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.75 % 
-```
 <!--END_SECTION:waka-->
 
 <p align="right">
