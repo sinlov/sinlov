@@ -45,21 +45,14 @@
 </p>
 
 <p>
-  Today is <b>Thursday, January 7, 2:04 AM GMT+8</b> <br />
-  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;50n@2x.png" width="20" /> <i>mist</i>
-  <li>temperature : <b>4.7 °C</b> , feels like  : <b>-0.2 °C</b></br></li>
-  <li>humidity    : <b>93%</b> , wind speed  : <b>5 meter&#x2F;sec</b></br></li>
+  Today is <b>Thursday, January 7, 2:38 AM GMT+8</b> <br />
+  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;04n@2x.png" width="20" /> <i>broken clouds</i>
+  <li>temperature : <b>4.8 °C</b> , feels like  : <b>-1.0 °C</b></br></li>
+  <li>humidity    : <b>86%</b> , wind speed  : <b>6 meter&#x2F;sec</b></br></li>
   <li>sun rises at: <b>08:01 AM</b> , sets at: <b>06:17 PM</b></li>
 </p>
 
 <!--START_SECTION:waka-->
-```text
-Other      8 hrs 1 min     ████████████████▓░░░░░░░░   66.54 % 
-Ruby       1 hr 44 mins    ███▓░░░░░░░░░░░░░░░░░░░░░   14.43 % 
-Go         50 mins         █▓░░░░░░░░░░░░░░░░░░░░░░░   07.01 % 
-YAML       27 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   03.75 % 
-Markdown   25 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   03.53 % 
-```
 <!--END_SECTION:waka-->
 
 <p align="right">
