@@ -1,3 +1,7 @@
+## 1.5.0 (2021-01-06)
+
+* fix: fix waka-readme.yml build step error ([1d6f0da](https://github.com/sinlov/sinlov/commit/1d6f0da))
+
 ## 1.4.0 (2021-01-05)
 
 * feat: change workflow to different cron set for update README.md ([fa7042f](https://github.com/sinlov/sinlov/commit/fa7042f))
