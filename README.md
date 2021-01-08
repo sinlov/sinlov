@@ -53,6 +53,13 @@
 </p>
 
 <!--START_SECTION:waka-->
+```text
+Other      12 hrs 18 mins  ███████████████▓░░░░░░░░░   62.96 % 
+Ruby       2 hrs 39 mins   ███▒░░░░░░░░░░░░░░░░░░░░░   13.60 % 
+Markdown   1 hr 36 mins    ██░░░░░░░░░░░░░░░░░░░░░░░   08.26 % 
+Go         1 hr 26 mins    ██░░░░░░░░░░░░░░░░░░░░░░░   07.35 % 
+YAML       29 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.55 % 
+```
 <!--END_SECTION:waka-->
 
 <p align="right">
