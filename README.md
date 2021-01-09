@@ -40,26 +40,19 @@
 
 <p align="center">
   <a href="https://github.com/sinlov">
-    <img src="https://github-readme-stats.vercel.app/api?username=sinlov&show_icons=true&theme=dracula" />
+    <img src="https://github-readme-stats.vercel.app/api?username=sinlov&show_icons=true&theme=buefy" />
   </a>
 </p>
 
 <p>
-  Today is <b>Saturday, January 9, 5:16 AM GMT+8</b> <br />
-  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;50n@2x.png" width="20" /> <i>mist</i>
-  <li>temperature : <b>2.4 °C</b> , feels like  : <b>-0.0 °C</b></br></li>
-  <li>humidity    : <b>93%</b> , wind speed  : <b>0.97 meter&#x2F;sec</b></br></li>
+  Today is <b>Saturday, January 9, 8:48 AM GMT+8</b> <br />
+  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;50d@2x.png" width="20" /> <i>mist</i>
+  <li>temperature : <b>2.5 °C</b> , feels like  : <b>0.4 °C</b></br></li>
+  <li>humidity    : <b>93%</b> , wind speed  : <b>0.56 meter&#x2F;sec</b></br></li>
   <li>sun rises at: <b>08:02 AM</b> , sets at: <b>06:19 PM</b></li>
 </p>
 
 <!--START_SECTION:waka-->
-```text
-Other      12 hrs 42 mins  ███████████████▓░░░░░░░░░   62.70 % 
-Ruby       2 hrs 39 mins   ███▒░░░░░░░░░░░░░░░░░░░░░   13.12 % 
-Markdown   1 hr 44 mins    ██░░░░░░░░░░░░░░░░░░░░░░░   08.60 % 
-Go         1 hr 37 mins    ██░░░░░░░░░░░░░░░░░░░░░░░   08.02 % 
-YAML       29 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.46 % 
-```
 <!--END_SECTION:waka-->
 
 <p align="right">
