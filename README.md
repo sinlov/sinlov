@@ -45,11 +45,11 @@
 </p>
 
 <p>
-  Today is <b>Tuesday, January 12, 11:25 PM GMT+8</b> <br />
+  Today is <b>Wednesday, January 13, 1:01 AM GMT+8</b> <br />
   My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;01n@2x.png" width="20" /> <i>clear sky</i>
-  <li>temperature : <b>1.6 °C</b> , feels like  : <b>-0.9 °C</b></br></li>
-  <li>humidity    : <b>87%</b> , wind speed  : <b>0.64 meter&#x2F;sec</b></br></li>
-  <li>sun rises at: <b>08:01 AM</b> , sets at: <b>06:21 PM</b></li>
+  <li>temperature : <b>1.6 °C</b> , feels like  : <b>-1.0 °C</b></br></li>
+  <li>humidity    : <b>87%</b> , wind speed  : <b>0.78 meter&#x2F;sec</b></br></li>
+  <li>sun rises at: <b>08:01 AM</b> , sets at: <b>06:22 PM</b></li>
 </p>
 
 <!--START_SECTION:waka-->
