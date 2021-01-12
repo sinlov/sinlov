@@ -1,3 +1,7 @@
+## <small>1.5.1 (2021-01-12)</small>
+
+* ci: change waka-readme schedule cron set to 01:00 on Monday ([a4fd0c3](https://github.com/sinlov/sinlov/commit/a4fd0c3))
+
 ## 1.5.0 (2021-01-06)
 
 * fix: fix waka-readme.yml build step error ([1d6f0da](https://github.com/sinlov/sinlov/commit/1d6f0da))
