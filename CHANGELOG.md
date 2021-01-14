@@ -1,3 +1,7 @@
+## 1.6.0 (2021-01-14)
+
+* feat: add keepReadMeData to keep README old data ([d181faa](https://github.com/sinlov/sinlov/commit/d181faa))
+
 ## <small>1.5.1 (2021-01-12)</small>
 
 * ci: change waka-readme schedule cron set to 01:00 on Monday ([a4fd0c3](https://github.com/sinlov/sinlov/commit/a4fd0c3))

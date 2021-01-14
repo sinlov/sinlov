@@ -344,4 +344,6 @@ async function action() {
     // await puppeteerService.close();
 }
 
-action();
+action().then(r => {
+
+});

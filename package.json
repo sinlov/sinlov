@@ -1,6 +1,6 @@
 {
   "name": "sinlov",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "description": "dynamic README.md for GitHub Profile, using Actions, Javascript and Mustache.",
   "main": "index.js",
   "scripts": {
