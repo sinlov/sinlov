@@ -161,9 +161,7 @@ async function keepWakaOldData() {
     let nextCache = false;
     await lineReader.eachLine('README.md', (line, last) => {
         if (last) {
-            if (isDebug()) {
-                console.log(`keepWakaOldData DATA.readme_cache.waka:\n${DATA.readme_cache.waka.join('\n')}`);
-            }
+            console.log(`keepWakaOldData DATA.readme_cache.waka:\n${DATA.readme_cache.waka.join('\n')}`);
             let fullContent = []
             let writeCache = false;
             lineReader.eachLine('README.md', (line, last) => {
