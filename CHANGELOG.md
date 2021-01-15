@@ -1,3 +1,7 @@
+## <small>1.6.1 (2021-01-15)</small>
+
+* open log at keepWakaOldData ([eedf1cc](https://github.com/sinlov/sinlov/commit/eedf1cc))
+
 ## 1.6.0 (2021-01-14)
 
 * feat: add keepReadMeData to keep README old data ([d181faa](https://github.com/sinlov/sinlov/commit/d181faa))
