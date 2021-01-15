@@ -53,6 +53,13 @@
 </p>
 
 <!--START_SECTION:waka-->
+```text
+Other        7 hrs 34 mins   █████████░░░░░░░░░░░░░░░░   36.19 % 
+Markdown     4 hrs 45 mins   █████▓░░░░░░░░░░░░░░░░░░░   22.71 % 
+TOML         2 hrs 31 mins   ███░░░░░░░░░░░░░░░░░░░░░░   12.07 % 
+Go           2 hrs 16 mins   ██▓░░░░░░░░░░░░░░░░░░░░░░   10.83 % 
+JavaScript   1 hr 11 mins    █▒░░░░░░░░░░░░░░░░░░░░░░░   05.70 % 
+```
 <!--END_SECTION:waka-->
 
 <p align="right">
