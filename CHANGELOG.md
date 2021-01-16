@@ -1,3 +1,10 @@
+## <small>1.7.2 (2021-01-16)</small>
+
+* docs: add title of waka time record ([3794103](https://github.com/sinlov/sinlov/commit/3794103))
+* Updated the Graph with weather data ([8b62dca](https://github.com/sinlov/sinlov/commit/8b62dca))
+
+
+
 ## <small>1.7.1 (2021-01-16)</small>
 
 * fix: fix weather information not write success ([59c195a](https://github.com/sinlov/sinlov/commit/59c195a))
