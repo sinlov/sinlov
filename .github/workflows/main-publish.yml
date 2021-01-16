@@ -26,7 +26,9 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Generate README file
-        run: npm start
+        run: |
+         npm start
+         echo "npm start finsh date: $(date)"
         env:
           RUN_MODE: ${{secrets.RUN_MODE}}
           OPEN_WEATHER_MAP_KEY: ${{secrets.OPEN_WEATHER_MAP_KEY}}
@@ -34,16 +36,15 @@ jobs:
         run: |
          echo "GITHUB_ACTOR -> ${GITHUB_ACTOR}"
          echo "GITHUB_REPOSITORY -> ${GITHUB_REPOSITORY}"
-         COMMIT_MSG="Updated the Graph with weather data, by github action at cron set"
+         COMMIT_MSG="Updated the Graph with weather data"
          if [ -z "${COMMIT_MSG}" ]; then
           echo "error: not found env: COMMIT_MSG"
           exit 1
          fi
-         # wait node file write
-         sleep 3
          git config http.sslVerify false
          git config user.name "${GITHUB_ACTOR}"
          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+         echo "Commit files date: $(date)"
          # commit
          git commit -m "${COMMIT_MSG}" --all
          # see status
