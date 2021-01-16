@@ -1,3 +1,14 @@
+## <small>1.6.2 (2021-01-16)</small>
+
+* add diff show of README.md to find bug at github action build ([c0c58e9](https://github.com/sinlov/sinlov/commit/c0c58e9))
+* change git commit way of info ([b7e066f](https://github.com/sinlov/sinlov/commit/b7e066f))
+* print time different to find out error ([9d357fc](https://github.com/sinlov/sinlov/commit/9d357fc))
+* show diff README.md ([1a3c644](https://github.com/sinlov/sinlov/commit/1a3c644))
+* feat: change main-publish use ad-m/github-push-action ([f16972d](https://github.com/sinlov/sinlov/commit/f16972d))
+* feat: fix github-push-action repository set error ([4c56ea0](https://github.com/sinlov/sinlov/commit/4c56ea0))
+* feat: let keepWakaOldData fullContent write as async ([c90f741](https://github.com/sinlov/sinlov/commit/c90f741))
+* feat: print time of build to find bug ([73e9b5a](https://github.com/sinlov/sinlov/commit/73e9b5a))
+
 ## <small>1.6.1 (2021-01-15)</small>
 
 * open log at keepWakaOldData ([eedf1cc](https://github.com/sinlov/sinlov/commit/eedf1cc))

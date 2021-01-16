@@ -49,7 +49,7 @@ jobs:
          git lfs install
          echo "Commit files date: $(date)"
          git add -A
-         git --no-pager diff README.md
+         git --no-pager diff --staged README.md
          git commit -m "${COMMIT_MSG}"
          git status
       - name: Push by Action
