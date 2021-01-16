@@ -1,3 +1,11 @@
+## <small>1.7.1 (2021-01-16)</small>
+
+* fix: fix weather information not write success ([59c195a](https://github.com/sinlov/sinlov/commit/59c195a))
+* Updated the Graph with new Metrics ([3e3190e](https://github.com/sinlov/sinlov/commit/3e3190e))
+* Updated the Graph with weather data ([4ae18d3](https://github.com/sinlov/sinlov/commit/4ae18d3))
+
+
+
 ## 1.7.0 (2021-01-16)
 
 * try to fix writeKeepData error ([172df94](https://github.com/sinlov/sinlov/commit/172df94))
