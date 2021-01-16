@@ -8,7 +8,9 @@ const fetch = require('node-fetch');
 const Mustache = require('mustache');
 const moment = require('moment-timezone');
 const fsUtils = require("nodejs-fs-utils");
-const lineReader = require('line-reader');
+const lineByLine = require('n-readlines');
+// const lineReader = require('line-reader');
+// const sleep = require('sleep');
 
 function isDebug() {
     return process.env.RUN_MODE && process.env.RUN_MODE !== 'prod'
@@ -157,51 +159,45 @@ async function getImgShields() {
     }
 }
 
-async function keepWakaOldData() {
+async function cacheWakaOldData() {
+
+    let liner = new lineByLine('README.md');
+    let line;
     let nextCache = false;
-    await lineReader.eachLine('README.md', (line, last) => {
-        if (last) {
-            console.log(`keepWakaOldData DATA.readme_cache.waka:\n${DATA.readme_cache.waka.join('\n')}`);
-            let fullContent = []
-            let writeCache = false;
-            lineReader.eachLine('README.md', (line, last) => {
-                fullContent.push(line);
-                if (line.toString().indexOf(`<!--START_SECTION:waka-->`) !== -1) {
-                    writeCache = true;
-                }
-                if (writeCache && DATA.readme_cache.waka.length > 0) {
-                    fullContent.push(DATA.readme_cache.waka.join('\n'));
-                    writeCache = false;
-                }
-                if (last) {
-                    fullReadme = fullContent.join('\n');
-                    console.log(`write fullContent:\n${fullReadme}`);
-                    fs.writeFile('README.md', fullReadme, (err) => {
-                        if (err) throw err;
-                        console.log('keepWakaOldData fullContent has saved');
-                    })
-                    // fs.writeFileSync('README.md', fullReadme);
-                }
-            });
-        } else {
-            if (line.toString().indexOf(`<!--END_SECTION:waka-->`) !== -1) {
-                nextCache = false;
-            }
-            if (nextCache) {
-                DATA.readme_cache.waka.push(`${line}`);
-            }
-            if (line.toString().indexOf(`<!--START_SECTION:waka-->`) !== -1) {
-                nextCache = true;
-            }
+    while (line = liner.next()) {
+        if (line.toString().indexOf(`<!--END_SECTION:waka-->`) !== -1) {
+            nextCache = false;
         }
-    });
+        if (nextCache) {
+            DATA.readme_cache.waka.push(`${line}`);
+        }
+        if (line.toString().indexOf(`<!--START_SECTION:waka-->`) !== -1) {
+            nextCache = true;
+        }
+    }
+
+    // let nextCache = false;
+    // lineReader.eachLine('README.md', (line, last) => {
+    //     if (last){
+    //         console.log(`cacheWakaOldData DATA.readme_cache.waka:\n${DATA.readme_cache.waka.join('\n')}`);
+    //     }
+    //     if (line.toString().indexOf(`<!--END_SECTION:waka-->`) !== -1) {
+    //         nextCache = false;
+    //     }
+    //     if (nextCache) {
+    //         DATA.readme_cache.waka.push(`${line}`);
+    //     }
+    //     if (line.toString().indexOf(`<!--START_SECTION:waka-->`) !== -1) {
+    //         nextCache = true;
+    //     }
+    // });
 }
 
 async function keepReadMeData() {
     if (isDebug()) {
         console.log('keepReadMeData start');
     }
-    await keepWakaOldData();
+    await cacheWakaOldData();
     if (isDebug()) {
         console.log('keepReadMeData end');
     }
@@ -287,14 +283,7 @@ async function switchThemeByTime(timezone = "America/Los_Angeles", sun_rise_time
     }
 }
 
-// async function setInstagramPosts() {
-//   const instagramImages = await puppeteerService.getLatestInstagramPostsFromAccount('visitstockholm', 3);
-//   DATA.img1 = instagramImages[0];
-//   DATA.img2 = instagramImages[1];
-//   DATA.img3 = instagramImages[2];
-// }
-
-function generateReadMe() {
+async function generateReadMe() {
     if (isDebug()) {
         console.log('generateReadMe start');
     }
@@ -302,12 +291,45 @@ function generateReadMe() {
         if (err) throw err;
         const output = Mustache.render(data.toString(), DATA);
         fs.writeFileSync('README.md', output);
+        writeKeepData();
     });
     if (isDebug()) {
         console.log('generateReadMe finish');
     }
 }
 
+async function writeKeepData() {
+    console.log(`writeKeepData DATA.readme_cache.waka:\n${DATA.readme_cache.waka.join('\n')}`);
+    if (DATA.readme_cache.waka.length !== 0) {
+        let fullContent = []
+        let writeCache = false;
+        let liner = new lineByLine('README.md');
+        let line;
+        while (line = liner.next()) {
+            fullContent.push(line.toString());
+            if (line.toString().indexOf(`<!--START_SECTION:waka-->`) !== -1) {
+                writeCache = true;
+            }
+            if (writeCache) {
+                // console.log(`add DATA.readme_cache.waka:\n${DATA.readme_cache.waka.join('\n')}`);
+                fullContent.push(DATA.readme_cache.waka.join('\n'));
+                writeCache = false;
+            }
+        }
+        fullReadme = fullContent.join('\n');
+        if (isDebug()) {
+            console.log(`write fullContent:\n${fullReadme}`);
+        }
+        fs.writeFileSync('README.md', fullReadme);
+    }
+}
+
+// async function setInstagramPosts() {
+//   const instagramImages = await puppeteerService.getLatestInstagramPostsFromAccount('visitstockholm', 3);
+//   DATA.img1 = instagramImages[0];
+//   DATA.img2 = instagramImages[1];
+//   DATA.img3 = instagramImages[2];
+// }
 
 /**
  * do github action
@@ -319,29 +341,29 @@ async function action() {
      */
     await mergeConfig();
 
-    await keepReadMeData();
+    await keepReadMeData().then(() =>{
+        /** get image shields */
+        getImgShields();
 
-    /** get image shields */
-    await getImgShields();
+        /**
+        * Fetch Weather
+        * must load env as OPEN_WEATHER_MAP_KEY
+        */
+        if (process.env.OPEN_WEATHER_MAP_KEY) {
+            setWeatherInformation(DATA.city, process.env.OPEN_WEATHER_MAP_KEY, DATA.lang, DATA.units);
+        }
 
-    /**
-     * Fetch Weather
-     * must load env as OPEN_WEATHER_MAP_KEY
-     */
-    if (process.env.OPEN_WEATHER_MAP_KEY) {
-        await setWeatherInformation(DATA.city, process.env.OPEN_WEATHER_MAP_KEY, DATA.lang, DATA.units);
-    }
+        /**
+        * sit different theme of status
+        */
+        switchThemeByTime(DATA.time_zone, DATA.sun_rise_timestamp, DATA.sun_set_timestamp);
 
-    /**
-     * sit different theme of status
-     */
-    await switchThemeByTime(DATA.time_zone, DATA.sun_rise_timestamp, DATA.sun_set_timestamp);
+        /**
+        * Generate README
+        */
+        generateReadMe();
 
-    /**
-     * Generate README
-     */
-    await generateReadMe();
-
+    });
     /**
      * future 👋
      */
