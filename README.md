@@ -45,14 +45,15 @@
 </p>
 
 <p>
-  Today is <b>Sunday, January 17, 1:48 AM GMT+8</b> <br />
+  Today is <b>Sunday, January 17, 2:17 AM GMT+8</b> <br />
   My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;01n@2x.png" width="20" /> <i>clear sky</i>
-  <li>temperature : <b>4.7 °C</b> , feels like  : <b>-0.3 °C</b></br></li>
-  <li>humidity    : <b>65%</b> , wind speed  : <b>4 meter&#x2F;sec</b></br></li>
+  <li>temperature : <b>7.4 °C</b> , feels like  : <b>3.9 °C</b></br></li>
+  <li>humidity    : <b>75%</b> , wind speed  : <b>3 meter&#x2F;sec</b></br></li>
   <li>sun rises at: <b>08:01 AM</b> , sets at: <b>06:25 PM</b></li>
 </p>
 
 <p>Recent coding record</p>
+
 <!--START_SECTION:waka-->
 ```text
 Markdown   5 hrs 13 mins   █████▓░░░░░░░░░░░░░░░░░░░   22.74 % 
