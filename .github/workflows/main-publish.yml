@@ -49,8 +49,8 @@ jobs:
          git lfs install
          echo "Commit files date: $(date)"
          git add -A
-         git commit -m "${COMMIT_MSG}"
          git --no-pager diff README.md
+         git commit -m "${COMMIT_MSG}"
          git status
       - name: Push by Action
         uses: ad-m/github-push-action@v0.6.0 # https://github.com/ad-m/github-push-action#github-action-for-github-push
