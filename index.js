@@ -174,6 +174,7 @@ async function keepWakaOldData() {
                     writeCache = false;
                 }
                 if (last) {
+                    console.log(`write fullContent\n${fullContent.join('\n')}`);
                     fs.writeFileSync('README.md', fullContent.join('\n'));
                 }
             });

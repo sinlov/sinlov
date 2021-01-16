@@ -30,33 +30,36 @@ jobs:
         env:
           RUN_MODE: ${{secrets.RUN_MODE}}
           OPEN_WEATHER_MAP_KEY: ${{secrets.OPEN_WEATHER_MAP_KEY}}
-      - name: Push new README.md
+      - name: Commit files
         run: |
          echo "GITHUB_ACTOR -> ${GITHUB_ACTOR}"
          echo "GITHUB_REPOSITORY -> ${GITHUB_REPOSITORY}"
-         COMMIT_MSG="update README.md data of weather, by github action at cron set"
+         COMMIT_MSG="Updated the Graph with weather data, by github action at cron set"
          if [ -z "${COMMIT_MSG}" ]; then
           echo "error: not found env: COMMIT_MSG"
           exit 1
          fi
-         echo "COMMIT_MSG -> ${COMMIT_MSG}"
-         # https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
-         remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+         # wait node file write
+         sleep 3
          git config http.sslVerify false
          git config user.name "${GITHUB_ACTOR}"
          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-         git remote add publisher "${remote_repo}"
-
-         # useful for debugging
-         git show-ref
-         git branch --verbose
-
-         # install lfs hooks
-         git lfs install
-
-         # publish any new files
-         git checkout main
-         git add -A
-         git commit -m "${COMMIT_MSG}" || exit 0
-         git pull --rebase publisher main
-         git push publisher main
+         # commit
+         git commit -m '${COMMIT_MSG}' --all
+         # see status
+         git status
+      - name: Push new README.md
+        uses: ad-m/github-push-action@v0.6.0 # https://github.com/ad-m/github-push-action#github-action-for-github-push
+        with:
+          # Token for the repo. Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Repository name to push. Default or empty value represents current github repository ( ${{ GITHUB_REPOSITORY }} )
+          repository: ${{ GITHUB_REPOSITORY }}
+          # Destination branch to push changes, optional, default is master
+          branch: ${{ github.ref }}
+          # Determines if force push is used
+          #force: false
+          # Determines if --tags is used
+          #tags: false
+          # Directory to change to before pushing. optional, default is .
+          #directory: '.'
