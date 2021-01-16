@@ -1,7 +1,7 @@
 .PHONY: test check clean build dist all
 
 # each tag change this
-ENV_DIST_VERSION := 1.6.2
+ENV_DIST_VERSION := 1.7.0
 
 # change base namespace
 ENV_PROJECT_NAME=sinlov

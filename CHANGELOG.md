@@ -1,3 +1,7 @@
+## 1.7.0 (2021-01-16)
+
+* try to fix writeKeepData error ([172df94](https://github.com/sinlov/sinlov/commit/172df94))
+
 ## <small>1.6.2 (2021-01-16)</small>
 
 * add diff show of README.md to find bug at github action build ([c0c58e9](https://github.com/sinlov/sinlov/commit/c0c58e9))
@@ -61,6 +65,3 @@
 * Create main-publish.yml ([24204c4](https://github.com/sinlov/sinlov/commit/24204c4))
 * first commit ([d11a846](https://github.com/sinlov/sinlov/commit/d11a846))
 * update travis script for cache npm ([5f80818](https://github.com/sinlov/sinlov/commit/5f80818))
-
-
-
