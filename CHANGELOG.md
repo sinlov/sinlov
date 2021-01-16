@@ -1,3 +1,7 @@
+## <small>1.7.3 (2021-01-16)</small>
+
+* fix: fix github readme render error ([a3df62e](https://github.com/sinlov/sinlov/commit/a3df62e))
+
 ## <small>1.7.2 (2021-01-16)</small>
 
 * docs: add title of waka time record ([3794103](https://github.com/sinlov/sinlov/commit/3794103))
@@ -5,10 +9,6 @@
 ## <small>1.7.1 (2021-01-16)</small>
 
 * fix: fix weather information not write success ([59c195a](https://github.com/sinlov/sinlov/commit/59c195a))
-* Updated the Graph with new Metrics ([3e3190e](https://github.com/sinlov/sinlov/commit/3e3190e))
-* Updated the Graph with weather data ([4ae18d3](https://github.com/sinlov/sinlov/commit/4ae18d3))
-
-
 
 ## 1.7.0 (2021-01-16)
 
