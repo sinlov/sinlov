@@ -47,13 +47,14 @@ jobs:
          git config user.name "${GITHUB_ACTOR}"
          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
          echo "Commit files date: $(date)"
+         git add -A
          # commit
-         git commit -m "${COMMIT_MSG}" --all
+         git commit -m "${COMMIT_MSG}"
          # see diff README.md
          git --no-pager diff README.md
          # see status
          git status
-      - name: Push new README.md
+      - name: Push by Action
         uses: ad-m/github-push-action@v0.6.0 # https://github.com/ad-m/github-push-action#github-action-for-github-push
         with:
           # Token for the repo. Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
