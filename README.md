@@ -45,7 +45,7 @@
 </p>
 
 <p>
-  Today is <b>Sunday, January 17, 12:56 AM GMT+8</b> <br />
+  Today is <b>Sunday, January 17, 1:00 AM GMT+8</b> <br />
   My current city <b>Chengdu, CN</b> weather is: <img src="" width="20" /> <i></i>
   <li>temperature : <b> °C</b> , feels like  : <b> °C</b></br></li>
   <li>humidity    : <b>%</b> , wind speed  : <b> meter&#x2F;sec</b></br></li>
