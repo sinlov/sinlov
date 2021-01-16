@@ -197,9 +197,20 @@ async function keepReadMeData() {
     if (isDebug()) {
         console.log('keepReadMeData start');
     }
-    await cacheWakaOldData();
+    cacheWakaOldData();
     if (isDebug()) {
         console.log('keepReadMeData end');
+    }
+    /**
+     * Fetch Weather
+     * must load env as OPEN_WEATHER_MAP_KEY
+     */
+    if (process.env.OPEN_WEATHER_MAP_KEY) {
+        setWeatherInformation(DATA.city, process.env.OPEN_WEATHER_MAP_KEY, DATA.lang, DATA.units);
+    } else {
+        console.log('warn: pass weather generate');
+        switchThemeByTime(DATA.time_zone, DATA.sun_rise_timestamp, DATA.sun_set_timestamp);
+        generateReadMe();
     }
 }
 
@@ -260,7 +271,14 @@ async function setWeatherInformation(city, appid, lang, units) {
                 minute: '2-digit',
                 timeZone: DATA.time_zone,
             });
-            save_weather_data(r);
+            if (!isDebug()) {
+                save_weather_data(r);
+            }
+            /**
+             * sit different theme of status
+             */
+            switchThemeByTime(DATA.time_zone, DATA.sun_rise_timestamp, DATA.sun_set_timestamp);
+            generateReadMe();
         });
 }
 
@@ -290,22 +308,24 @@ async function generateReadMe() {
     fs.readFile(MUSTACHE_MAIN_DIR, (err, data) => {
         if (err) throw err;
         const output = Mustache.render(data.toString(), DATA);
-        fs.writeFileSync('README.md', output);
-        writeKeepData();
+        // fs.writeFileSync('README.md', output);
+        writeKeepData('README.md', output);
     });
     if (isDebug()) {
         console.log('generateReadMe finish');
     }
 }
 
-async function writeKeepData() {
+async function writeKeepData(path, content) {
     console.log(`writeKeepData DATA.readme_cache.waka:\n${DATA.readme_cache.waka.join('\n')}`);
     if (DATA.readme_cache.waka.length !== 0) {
         let fullContent = []
         let writeCache = false;
-        let liner = new lineByLine('README.md');
-        let line;
-        while (line = liner.next()) {
+        if (isDebug()) {
+            console.log(`writeKeepData content:\n${content}`);
+        }
+        let oldContent = content.toString().split('\n');
+        oldContent.forEach(line => {
             fullContent.push(line.toString());
             if (line.toString().indexOf(`<!--START_SECTION:waka-->`) !== -1) {
                 writeCache = true;
@@ -315,12 +335,26 @@ async function writeKeepData() {
                 fullContent.push(DATA.readme_cache.waka.join('\n'));
                 writeCache = false;
             }
-        }
+        });
+        // let liner = new lineByLine(path);
+        // let line;
+        // while (line = liner.next()) {
+        //     fullContent.push(line.toString());
+        //     if (line.toString().indexOf(`<!--START_SECTION:waka-->`) !== -1) {
+        //         writeCache = true;
+        //     }
+        //     if (writeCache) {
+        //         console.log(`add DATA.readme_cache.waka:\n${DATA.readme_cache.waka.join('\n')}`);
+        //         fullContent.push(DATA.readme_cache.waka.join('\n'));
+        //         writeCache = false;
+        //     }
+        // }
+
         fullReadme = fullContent.join('\n');
         if (isDebug()) {
             console.log(`write fullContent:\n${fullReadme}`);
         }
-        fs.writeFileSync('README.md', fullReadme);
+        fs.writeFileSync(path, fullReadme);
     }
 }
 
@@ -341,29 +375,11 @@ async function action() {
      */
     await mergeConfig();
 
-    await keepReadMeData().then(() =>{
-        /** get image shields */
-        getImgShields();
+    await getImgShields();
 
-        /**
-        * Fetch Weather
-        * must load env as OPEN_WEATHER_MAP_KEY
-        */
-        if (process.env.OPEN_WEATHER_MAP_KEY) {
-            setWeatherInformation(DATA.city, process.env.OPEN_WEATHER_MAP_KEY, DATA.lang, DATA.units);
-        }
+    await keepReadMeData();
 
-        /**
-        * sit different theme of status
-        */
-        switchThemeByTime(DATA.time_zone, DATA.sun_rise_timestamp, DATA.sun_set_timestamp);
-
-        /**
-        * Generate README
-        */
-        generateReadMe();
-
-    });
+    // });
     /**
      * future 👋
      */
