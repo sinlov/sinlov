@@ -45,7 +45,7 @@ jobs:
          git config user.name "${GITHUB_ACTOR}"
          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
          # commit
-         git commit -m '${COMMIT_MSG}' --all
+         git commit -m "${COMMIT_MSG}" --all
          # see status
          git status
       - name: Push new README.md

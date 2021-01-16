@@ -174,8 +174,13 @@ async function keepWakaOldData() {
                     writeCache = false;
                 }
                 if (last) {
-                    console.log(`write fullContent\n${fullContent.join('\n')}`);
-                    fs.writeFileSync('README.md', fullContent.join('\n'));
+                    fullReadme = fullContent.join('\n');
+                    console.log(`write fullContent:\n${fullReadme}`);
+                    fs.writeFile('README.md', fullReadme, (err) => {
+                        if (err) throw err;
+                        console.log('keepWakaOldData fullContent has saved');
+                    })
+                    // fs.writeFileSync('README.md', fullReadme);
                 }
             });
         } else {
