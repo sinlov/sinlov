@@ -45,10 +45,10 @@
 </p>
 
 <p>
-  Today is <b>Monday, January 18, 2:47 AM GMT+8</b> <br />
+  Today is <b>Monday, January 18, 5:23 AM GMT+8</b> <br />
   My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;01n@2x.png" width="20" /> <i>clear sky</i>
-  <li>temperature : <b>3.0 °C</b> , feels like  : <b>-0.5 °C</b></br></li>
-  <li>humidity    : <b>75%</b> , wind speed  : <b>2 meter&#x2F;sec</b></br></li>
+  <li>temperature : <b>1.4 °C</b> , feels like  : <b>-0.9 °C</b></br></li>
+  <li>humidity    : <b>93%</b> , wind speed  : <b>0.58 meter&#x2F;sec</b></br></li>
   <li>sun rises at: <b>08:01 AM</b> , sets at: <b>06:26 PM</b></li>
 </p>
 
