@@ -40,15 +40,15 @@
 
 <p align="center">
   <a href="https://github.com/sinlov">
-    <img src="https://github-readme-stats.vercel.app/api?username=sinlov&show_icons=true&theme=buefy" />
+    <img src="https://github-readme-stats.vercel.app/api?username=sinlov&show_icons=true&theme=dracula" />
   </a>
 </p>
 
 <p>
-  Today is <b>Sunday, January 31, 5:15 PM GMT+8</b> <br />
-  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;01d@2x.png" width="20" /> <i>clear sky</i>
-  <li>temperature : <b>16.0 °C</b> , feels like  : <b>12.1 °C</b></br></li>
-  <li>humidity    : <b>36%</b> , wind speed  : <b>3 meter&#x2F;sec</b></br></li>
+  Today is <b>Sunday, January 31, 8:17 PM GMT+8</b> <br />
+  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;01n@2x.png" width="20" /> <i>clear sky</i>
+  <li>temperature : <b>11.6 °C</b> , feels like  : <b>8.3 °C</b></br></li>
+  <li>humidity    : <b>47%</b> , wind speed  : <b>2 meter&#x2F;sec</b></br></li>
   <li>sun rises at: <b>07:55 AM</b> , sets at: <b>06:38 PM</b></li>
 </p>
 
