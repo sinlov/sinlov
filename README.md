@@ -56,11 +56,11 @@
 
 <!--START_SECTION:waka-->
 ```text
+Markdown     9 hrs 43 mins   ██████▒░░░░░░░░░░░░░░░░░░   25.37 % 
 TypeScript   7 hrs 44 mins   █████░░░░░░░░░░░░░░░░░░░░   20.22 % 
-Dart         6 hrs 47 mins   ████▒░░░░░░░░░░░░░░░░░░░░   17.72 % 
-Markdown     6 hrs 21 mins   ████░░░░░░░░░░░░░░░░░░░░░   16.61 % 
 JavaScript   3 hrs 20 mins   ██▒░░░░░░░░░░░░░░░░░░░░░░   08.74 % 
-Go           3 hrs 10 mins   ██░░░░░░░░░░░░░░░░░░░░░░░   08.29 % 
+Go           3 hrs 20 mins   ██▒░░░░░░░░░░░░░░░░░░░░░░   08.70 % 
+Ruby         2 hrs 52 mins   ██░░░░░░░░░░░░░░░░░░░░░░░   07.49 % 
 ```
 <!--END_SECTION:waka-->
 
