@@ -56,11 +56,11 @@
 
 <!--START_SECTION:waka-->
 ```text
-Kotlin       10 hrs 52 mins  ███████░░░░░░░░░░░░░░░░░░   27.90 % 
-Java         8 hrs 19 mins   █████▒░░░░░░░░░░░░░░░░░░░   21.37 % 
-TypeScript   6 hrs 53 mins   ████▒░░░░░░░░░░░░░░░░░░░░   17.69 % 
-Markdown     3 hrs 20 mins   ██░░░░░░░░░░░░░░░░░░░░░░░   08.55 % 
-Other        2 hrs 37 mins   █▓░░░░░░░░░░░░░░░░░░░░░░░   06.73 % 
+Java         11 hrs 5 mins   ██████▓░░░░░░░░░░░░░░░░░░   27.21 % 
+Kotlin       9 hrs 49 mins   ██████░░░░░░░░░░░░░░░░░░░   24.09 % 
+TypeScript   8 hrs 2 mins    █████░░░░░░░░░░░░░░░░░░░░   19.71 % 
+Markdown     3 hrs 12 mins   ██░░░░░░░░░░░░░░░░░░░░░░░   07.88 % 
+Other        2 hrs 37 mins   █▓░░░░░░░░░░░░░░░░░░░░░░░   06.42 % 
 ```
 <!--END_SECTION:waka-->
 
