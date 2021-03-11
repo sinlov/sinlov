@@ -56,11 +56,11 @@
 
 <!--START_SECTION:waka-->
 ```text
-Go           2 hrs 28 mins   ███▓░░░░░░░░░░░░░░░░░░░░░   14.70 % 
-Markdown     2 hrs 24 mins   ███▓░░░░░░░░░░░░░░░░░░░░░   14.30 % 
-TypeScript   2 hrs 8 mins    ███▒░░░░░░░░░░░░░░░░░░░░░   12.76 % 
-JavaScript   2 hrs 2 mins    ███░░░░░░░░░░░░░░░░░░░░░░   12.10 % 
-Makefile     1 hr 52 mins    ██▓░░░░░░░░░░░░░░░░░░░░░░   11.13 % 
+Other        2 hrs 46 mins   ███▒░░░░░░░░░░░░░░░░░░░░░   13.78 % 
+Go           2 hrs 38 mins   ███▒░░░░░░░░░░░░░░░░░░░░░   13.14 % 
+Groovy       2 hrs 34 mins   ███▒░░░░░░░░░░░░░░░░░░░░░   12.81 % 
+Makefile     1 hr 59 mins    ██▒░░░░░░░░░░░░░░░░░░░░░░   09.91 % 
+JavaScript   1 hr 59 mins    ██▒░░░░░░░░░░░░░░░░░░░░░░   09.91 % 
 ```
 <!--END_SECTION:waka-->
 
