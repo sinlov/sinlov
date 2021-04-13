@@ -45,11 +45,11 @@
 </p>
 
 <p>
-  Today is <b>Tuesday, April 13, 11:16 PM GMT+8</b> <br />
+  Today is <b>Wednesday, April 14, 2:26 AM GMT+8</b> <br />
   My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;04n@2x.png" width="20" /> <i>broken clouds</i>
-  <li>temperature : <b>16.1 °C</b> , feels like  : <b>16.0 °C</b></br></li>
-  <li>humidity    : <b>88%</b> , wind speed  : <b>3 meter&#x2F;sec</b></br></li>
-  <li>sun rises at: <b>06:38 AM</b> , sets at: <b>07:29 PM</b></li>
+  <li>temperature : <b>15.6 °C</b> , feels like  : <b>15.8 °C</b></br></li>
+  <li>humidity    : <b>100%</b> , wind speed  : <b>4 meter&#x2F;sec</b></br></li>
+  <li>sun rises at: <b>06:37 AM</b> , sets at: <b>07:30 PM</b></li>
 </p>
 
 <p>Recent coding record</p>
