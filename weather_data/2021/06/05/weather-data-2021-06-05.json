@@ -92,5 +92,52 @@
       "name": "Chengdu",
       "cod": 200
     }
+  },
+  {
+    "date": "2021-06-05T01:09:23+00:00",
+    "weather": {
+      "coord": {
+        "lon": 104.0667,
+        "lat": 30.6667
+      },
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 23.94,
+        "feels_like": 23.96,
+        "temp_min": 23.94,
+        "temp_max": 23.94,
+        "pressure": 1010,
+        "humidity": 60
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 0.73,
+        "deg": 208,
+        "gust": 0.89
+      },
+      "clouds": {
+        "all": 0
+      },
+      "dt": 1622855363,
+      "sys": {
+        "type": 1,
+        "id": 9674,
+        "country": "CN",
+        "sunrise": 1622844063,
+        "sunset": 1622894619
+      },
+      "timezone": 28800,
+      "id": 1815286,
+      "name": "Chengdu",
+      "cod": 200
+    }
   }
 ]
