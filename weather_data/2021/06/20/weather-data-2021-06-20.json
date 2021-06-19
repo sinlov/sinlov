@@ -1,0 +1,49 @@
+[
+  {
+    "date": "2021-06-19T18:13:23+00:00",
+    "weather": {
+      "coord": {
+        "lon": 104.0667,
+        "lat": 30.6667
+      },
+      "weather": [
+        {
+          "id": 804,
+          "main": "Clouds",
+          "description": "overcast clouds",
+          "icon": "04n"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 20.85,
+        "feels_like": 21.24,
+        "temp_min": 20.85,
+        "temp_max": 20.85,
+        "pressure": 1003,
+        "humidity": 86,
+        "sea_level": 1003,
+        "grnd_level": 947
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 0.84,
+        "deg": 110,
+        "gust": 0.93
+      },
+      "clouds": {
+        "all": 94
+      },
+      "dt": 1624126134,
+      "sys": {
+        "country": "CN",
+        "sunrise": 1624140078,
+        "sunset": 1624190951
+      },
+      "timezone": 28800,
+      "id": 1815286,
+      "name": "Chengdu",
+      "cod": 200
+    }
+  }
+]
