@@ -45,10 +45,10 @@
 </p>
 
 <p>
-  Today is <b>Thursday, August 19, 2:14 AM GMT+8</b> <br />
+  Today is <b>Thursday, August 19, 5:10 AM GMT+8</b> <br />
   My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;04n@2x.png" width="20" /> <i>overcast clouds</i>
-  <li>temperature : <b>23.2 °C</b> , feels like  : <b>24.1 °C</b></br></li>
-  <li>humidity    : <b>95%</b> , wind speed  : <b>2.32 meter&#x2F;sec</b></br></li>
+  <li>temperature : <b>22.6 °C</b> , feels like  : <b>23.4 °C</b></br></li>
+  <li>humidity    : <b>96%</b> , wind speed  : <b>1.84 meter&#x2F;sec</b></br></li>
   <li>sun rises at: <b>06:32 AM</b> , sets at: <b>07:42 PM</b></li>
 </p>
 
