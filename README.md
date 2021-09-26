@@ -45,10 +45,10 @@
 </p>
 
 <p>
-  Today is <b>Sunday, September 26, 8:43 AM GMT+8</b> <br />
-  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;09d@2x.png" width="20" /> <i>light intensity shower rain</i>
-  <li>temperature : <b>24.9 °C</b> , feels like  : <b>25.4 °C</b></br></li>
-  <li>humidity    : <b>76%</b> , wind speed  : <b>4 meter&#x2F;sec</b></br></li>
+  Today is <b>Sunday, September 26, 11:12 AM GMT+8</b> <br />
+  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;10d@2x.png" width="20" /> <i>heavy intensity rain</i>
+  <li>temperature : <b>22.6 °C</b> , feels like  : <b>23.1 °C</b></br></li>
+  <li>humidity    : <b>84%</b> , wind speed  : <b>5.14 meter&#x2F;sec</b></br></li>
   <li>sun rises at: <b>06:54 AM</b> , sets at: <b>06:56 PM</b></li>
 </p>
 
