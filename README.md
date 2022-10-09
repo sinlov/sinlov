@@ -59,8 +59,7 @@
 
 <!--START_SECTION:waka-->
 ```text
-YAML       3 mins          ██████████████▓░░░░░░░░░░   58.37 % 
-Markdown   1 min           ███████░░░░░░░░░░░░░░░░░░   28.31 % 
+YAML   3 mins          █████████████████████░░░░   83.47 % 
 ```
 <!--END_SECTION:waka-->
 
