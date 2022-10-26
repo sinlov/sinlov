@@ -48,10 +48,10 @@
 </p>
 
 <p>
-  Today is <b>Wednesday, October 26, 8:16 PM GMT+8</b> <br />
-  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;04n@2x.png" width="20" /> <i>overcast clouds</i>
-  <li>temperature : <b>16.8 °C</b> , feels like  : <b>16.6 °C</b></br></li>
-  <li>humidity    : <b>79%</b> , wind speed  : <b>1.27 meter&#x2F;sec</b></br></li>
+  Today is <b>Wednesday, October 26, 11:30 PM GMT+8</b> <br />
+  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;50n@2x.png" width="20" /> <i>mist</i>
+  <li>temperature : <b>16.9 °C</b> , feels like  : <b>17.0 °C</b></br></li>
+  <li>humidity    : <b>88%</b> , wind speed  : <b>1 meter&#x2F;sec</b></br></li>
   <li>sun rises at: <b>07:13 AM</b> , sets at: <b>06:21 PM</b></li>
 </p>
 
@@ -66,6 +66,10 @@ Docker     3 hrs 10 mins   ██▓░░░░░░░░░░░░░░�
 Other      2 hrs 59 mins   ██▓░░░░░░░░░░░░░░░░░░░░░░   10.44 % 
 ```
 <!--END_SECTION:waka-->
+
+<p>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sinlov&layout=compact" />
+</p>
 
 <p align="right">
   <a href="https://github.com/sinlov/sinlov/actions">
