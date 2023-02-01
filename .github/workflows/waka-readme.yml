@@ -16,8 +16,9 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v1
+
       - name: update by athul/waka-readme
-        uses: athul/waka-readme@v0.1.5
+        uses: athul/waka-readme@v0.1.7
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
       # - name: Push new README.md
