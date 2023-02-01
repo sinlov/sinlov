@@ -48,23 +48,25 @@
 </p>
 
 <p>
-  Today is <b>Wednesday, February 1, 8:39 AM GMT+8</b> <br />
+  Today is <b>Wednesday, February 1, 10:21 AM GMT+8</b> <br />
   My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;50d@2x.png" width="20" /> <i>mist</i>
-  <li>temperature : <b>9.4 °C</b> , feels like  : <b>9.4 °C</b></br></li>
-  <li>humidity    : <b>64%</b> , wind speed  : <b>1 meter&#x2F;sec</b></br></li>
+  <li>temperature : <b>12.1 °C</b> , feels like  : <b>11.5 °C</b></br></li>
+  <li>humidity    : <b>82%</b> , wind speed  : <b>1 meter&#x2F;sec</b></br></li>
   <li>sun rises at: <b>07:55 AM</b> , sets at: <b>06:38 PM</b></li>
 </p>
 
 <p>Recent coding record</p>
 
 <!--START_SECTION:waka-->
+
 ```text
-YAML       9 hrs 5 mins    ████████░░░░░░░░░░░░░░░░░   31.70 % 
-Markdown   4 hrs 38 mins   ████░░░░░░░░░░░░░░░░░░░░░   16.19 % 
-Makefile   3 hrs 49 mins   ███▒░░░░░░░░░░░░░░░░░░░░░   13.37 % 
-Docker     3 hrs 10 mins   ██▓░░░░░░░░░░░░░░░░░░░░░░   11.11 % 
-Other      2 hrs 59 mins   ██▓░░░░░░░░░░░░░░░░░░░░░░   10.44 % 
+Go               19 hrs 16 mins  ███████████████▓░░░░░░░░░   62.69 %
+Markdown         4 hrs 13 mins   ███▒░░░░░░░░░░░░░░░░░░░░░   13.71 %
+Makefile         2 hrs 23 mins   ██░░░░░░░░░░░░░░░░░░░░░░░   07.80 %
+YAML             1 hr 51 mins    █▓░░░░░░░░░░░░░░░░░░░░░░░   06.06 %
+Other            1 hr 43 mins    █▒░░░░░░░░░░░░░░░░░░░░░░░   05.60 %
 ```
+
 <!--END_SECTION:waka-->
 
 <p>
