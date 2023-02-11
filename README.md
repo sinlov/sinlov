@@ -38,7 +38,7 @@
   <a href="https://docs.microsoft.com/dotnet/csharp/"><img alt="Csharp" src="https://img.shields.io/badge/-Csharp-239120?logo=C%20sharp&logoColor=white&style="/></a>
   <a href="https://unity.com/"><img alt="Unity" src="https://img.shields.io/badge/-Unity-000000?logo=Unity&logoColor=white&style="/></a>
   <a href="https://www.unrealengine.com/"><img alt="Unreal Engine" src="https://img.shields.io/badge/-Unreal Engine-0E1128?logo=Unreal%20Engine&logoColor=white&style="/></a>
-
+  
 </p>
 
 <p align="center">
@@ -48,11 +48,11 @@
 </p>
 
 <p>
-  Today is <b>Saturday, February 11, 8:10 PM GMT+8</b> <br />
-  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;04n@2x.png" width="20" /> <i>overcast clouds</i>
-  <li>temperature : <b>13.3 °C</b> , feels like  : <b>12.7 °C</b></br></li>
-  <li>humidity    : <b>78%</b> , wind speed  : <b>2.74 meter&#x2F;sec</b></br></li>
-  <li>sun rises at: <b>07:48 AM</b> , sets at: <b>06:47 PM</b></li>
+  Today is <b>Sunday, February 12, 1:21 AM GMT+8</b> <br />
+  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;03n@2x.png" width="20" /> <i>scattered clouds</i>
+  <li>temperature : <b>13.0 °C</b> , feels like  : <b>12.7 °C</b></br></li>
+  <li>humidity    : <b>88%</b> , wind speed  : <b>2 meter&#x2F;sec</b></br></li>
+  <li>sun rises at: <b>07:47 AM</b> , sets at: <b>06:48 PM</b></li>
 </p>
 
 <p>Recent coding record</p>
@@ -76,8 +76,6 @@ Other            1 hr 43 mins    █░░░░░░░░░░░░░░�
 
 <p align="right">
   <a href="https://github.com/sinlov/sinlov/actions">
-    <img alt="waka-readme"
-      src="https://github.com/sinlov/sinlov/workflows/waka-readme/badge.svg?branch=main">
     <img alt="build-README.md"
       src="https://github.com/sinlov/sinlov/workflows/build-README.md/badge.svg?branch=main">
   </a>
