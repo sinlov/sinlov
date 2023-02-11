@@ -27,6 +27,7 @@ let DATA = {
     units: 'metric',
     wind_speed_units: 'meter/sec',
     git_action_main_publish_name: 'build-README.md',
+    git_action_task_waka_readme_name: 'waka-readme',
     readme_cache: {
         waka: [],
     },
