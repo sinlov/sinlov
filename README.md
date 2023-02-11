@@ -38,7 +38,7 @@
   <a href="https://docs.microsoft.com/dotnet/csharp/"><img alt="Csharp" src="https://img.shields.io/badge/-Csharp-239120?logo=C%20sharp&logoColor=white&style="/></a>
   <a href="https://unity.com/"><img alt="Unity" src="https://img.shields.io/badge/-Unity-000000?logo=Unity&logoColor=white&style="/></a>
   <a href="https://www.unrealengine.com/"><img alt="Unreal Engine" src="https://img.shields.io/badge/-Unreal Engine-0E1128?logo=Unreal%20Engine&logoColor=white&style="/></a>
-  
+
 </p>
 
 <p align="center">
@@ -76,6 +76,8 @@ Other            1 hr 43 mins    █░░░░░░░░░░░░░░�
 
 <p align="right">
   <a href="https://github.com/sinlov/sinlov/actions">
+    <img alt="waka-readme"
+      src="https://github.com/sinlov/sinlov/workflows/waka-readme/badge.svg?branch=main">
     <img alt="build-README.md"
       src="https://github.com/sinlov/sinlov/workflows/build-README.md/badge.svg?branch=main">
   </a>
