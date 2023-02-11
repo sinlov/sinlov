@@ -48,7 +48,7 @@
 </p>
 
 <p>
-  Today is <b>Sunday, February 12, 1:21 AM GMT+8</b> <br />
+  Today is <b>Sunday, February 12, 1:28 AM GMT+8</b> <br />
   My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;03n@2x.png" width="20" /> <i>scattered clouds</i>
   <li>temperature : <b>13.0 °C</b> , feels like  : <b>12.7 °C</b></br></li>
   <li>humidity    : <b>88%</b> , wind speed  : <b>2 meter&#x2F;sec</b></br></li>
@@ -76,6 +76,8 @@ Other            1 hr 43 mins    █░░░░░░░░░░░░░░�
 
 <p align="right">
   <a href="https://github.com/sinlov/sinlov/actions">
+    <img alt="waka-readme"
+      src="https://github.com/sinlov/sinlov/workflows/waka-readme/badge.svg?branch=main">
     <img alt="build-README.md"
       src="https://github.com/sinlov/sinlov/workflows/build-README.md/badge.svg?branch=main">
   </a>
