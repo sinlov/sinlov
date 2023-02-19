@@ -60,12 +60,12 @@
 <!--START_SECTION:waka-->
 
 ```text
-Python                     8 hrs 2 mins    ████░░░░░░░░░░░░░░░░░░░░░   15.55 %
-YAML                       7 hrs 43 mins   ███▓░░░░░░░░░░░░░░░░░░░░░   14.95 %
-Makefile                   7 hrs 11 mins   ███▒░░░░░░░░░░░░░░░░░░░░░   13.92 %
-TypeScript                 5 hrs 18 mins   ██▓░░░░░░░░░░░░░░░░░░░░░░   10.26 %
-Markdown                   3 hrs 41 mins   █▓░░░░░░░░░░░░░░░░░░░░░░░   07.14 %
-Rust                       3 hrs 23 mins   █▓░░░░░░░░░░░░░░░░░░░░░░░   06.55 %
+Python                     8 hrs 2 mins    ████▓░░░░░░░░░░░░░░░░░░░░   18.37 %
+Makefile                   6 hrs 36 mins   ███▓░░░░░░░░░░░░░░░░░░░░░   15.10 %
+TypeScript                 5 hrs 18 mins   ███░░░░░░░░░░░░░░░░░░░░░░   12.12 %
+YAML                       4 hrs 55 mins   ██▓░░░░░░░░░░░░░░░░░░░░░░   11.26 %
+Rust                       3 hrs 23 mins   ██░░░░░░░░░░░░░░░░░░░░░░░   07.75 %
+Markdown                   3 hrs 8 mins    █▓░░░░░░░░░░░░░░░░░░░░░░░   07.18 %
 ```
 
 <!--END_SECTION:waka-->
