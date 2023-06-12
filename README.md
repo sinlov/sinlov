@@ -60,11 +60,11 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Groovy           5 hrs 17 mins   ████▒░░░░░░░░░░░░░░░░░░░░   17.81 %
-Markdown         4 hrs 48 mins   ████░░░░░░░░░░░░░░░░░░░░░   16.14 %
-Makefile         3 hrs 19 mins   ██▓░░░░░░░░░░░░░░░░░░░░░░   11.15 %
-Gradle           3 hrs 8 mins    ██▓░░░░░░░░░░░░░░░░░░░░░░   10.58 %
-Java             2 hrs 23 mins   ██░░░░░░░░░░░░░░░░░░░░░░░   08.04 %
+Groovy           5 hrs 17 mins   ████▒░░░░░░░░░░░░░░░░░░░░   17.43 %
+Markdown         4 hrs 58 mins   ████░░░░░░░░░░░░░░░░░░░░░   16.36 %
+Makefile         3 hrs 19 mins   ██▓░░░░░░░░░░░░░░░░░░░░░░   10.94 %
+Gradle           3 hrs 8 mins    ██▓░░░░░░░░░░░░░░░░░░░░░░   10.36 %
+Java             2 hrs 23 mins   ██░░░░░░░░░░░░░░░░░░░░░░░   07.87 %
 ```
 
 <!--END_SECTION:waka-->
