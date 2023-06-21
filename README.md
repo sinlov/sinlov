@@ -47,14 +47,6 @@
   </a>
 </p>
 
-<p>
-  Today is <b>Wednesday, June 21, 8:36 AM GMT+8</b> <br />
-  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;09d@2x.png" width="20" /> <i>light intensity shower rain</i>
-  <li>temperature : <b>20.9 °C</b> , feels like  : <b>21.3 °C</b></br></li>
-  <li>humidity    : <b>83%</b> , wind speed  : <b>4 meter&#x2F;sec</b></br></li>
-  <li>sun rises at: <b>06:01 AM</b> , sets at: <b>08:09 PM</b></li>
-</p>
-
 <p>Recent coding record</p>
 
 <!--START_SECTION:waka-->
@@ -70,7 +62,38 @@ Other            2 hrs 18 mins   █░░░░░░░░░░░░░░�
 <!--END_SECTION:waka-->
 
 <p>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sinlov&layout=compact" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sinlov&layout=compact&hide=cmake,makefile,batchfile,emacs,css,html,yaml" />
+</p>
+
+<details>
+<p align="center">
+  <a href="https://github.com/sinlov">
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sinlov&theme=transparent" />
+  </a>
+  <a href="https://github.com/sinlov">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=sinlov&hide_border=true&card_width=338&theme=transparent" />
+  </a>
+  <a href="https://github.com/sinlov">
+    <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=sinlov&theme=transparent" />
+  </a>
+  <a href="https://github.com/sinlov">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sinlov&card_width=699&hide_border=true&theme=transparent&hide=cmake,makefile,batchfile,emacs,css,html,yaml" />
+  </a>
+</p>
+</details>
+
+<p align="center">
+  <a href="https://github.com/sinlov">
+    <img src="https://komarev.com/ghpvc/?username=sinlov&color=blue&style=flat)" />
+  </a>
+</p>
+
+<p>
+  Today is <b>Wednesday, June 21, 2:52 PM GMT+8</b> <br />
+  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;02d@2x.png" width="20" /> <i>few clouds</i>
+  <li>temperature : <b>25.9 °C</b> , feels like  : <b>26.1 °C</b></br></li>
+  <li>humidity    : <b>57%</b> , wind speed  : <b>2 meter&#x2F;sec</b></br></li>
+  <li>sun rises at: <b>06:01 AM</b> , sets at: <b>08:09 PM</b></li>
 </p>
 
 <p align="right">
