@@ -54,11 +54,11 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Markdown          5 hrs 13 mins   ██████████████████▓░░░░░░   74.55 %
-YAML              1 hr 25 mins    █████░░░░░░░░░░░░░░░░░░░░   20.28 %
-Java Properties   10 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.42 %
-Other             4 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.08 %
-ActionScript 3    3 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.92 %
+Markdown          4 hrs 20 mins   ████████████████░░░░░░░░░   64.11 %
+YAML              1 hr 21 mins    █████░░░░░░░░░░░░░░░░░░░░   20.21 %
+Batchfile         30 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   07.40 %
+Java Properties   11 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.94 %
+Assembly          6 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.70 %
 ```
 
 <!--END_SECTION:waka-->
