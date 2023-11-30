@@ -1,0 +1,48 @@
+[
+  {
+    "date": "2023-11-30T00:03:13+00:00",
+    "weather": {
+      "coord": {
+        "lon": 104.0667,
+        "lat": 30.6667
+      },
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 12.94,
+        "feels_like": 12.14,
+        "temp_min": 12.94,
+        "temp_max": 14.13,
+        "pressure": 1025,
+        "humidity": 71
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 2,
+        "deg": 20
+      },
+      "clouds": {
+        "all": 0
+      },
+      "dt": 1701302342,
+      "sys": {
+        "type": 1,
+        "id": 9674,
+        "country": "CN",
+        "sunrise": 1701301334,
+        "sunset": 1701338547
+      },
+      "timezone": 28800,
+      "id": 1815286,
+      "name": "Chengdu",
+      "cod": 200
+    }
+  }
+]
