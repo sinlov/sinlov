@@ -1,0 +1,48 @@
+[
+  {
+    "date": "2023-12-16T00:03:02+00:00",
+    "weather": {
+      "coord": {
+        "lon": 104.0667,
+        "lat": 30.6667
+      },
+      "weather": [
+        {
+          "id": 802,
+          "main": "Clouds",
+          "description": "scattered clouds",
+          "icon": "03d"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 3.94,
+        "feels_like": 1.23,
+        "temp_min": 3.94,
+        "temp_max": 4.13,
+        "pressure": 1035,
+        "humidity": 30
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 3,
+        "deg": 20
+      },
+      "clouds": {
+        "all": 40
+      },
+      "dt": 1702684982,
+      "sys": {
+        "type": 1,
+        "id": 9674,
+        "country": "CN",
+        "sunrise": 1702684433,
+        "sunset": 1702721056
+      },
+      "timezone": 28800,
+      "id": 1815286,
+      "name": "Chengdu",
+      "cod": 200
+    }
+  }
+]
