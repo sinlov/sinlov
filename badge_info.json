@@ -11,7 +11,7 @@
     "bg_color": "#2088FF",
     "logo": "github-actions",
     "logoColor": "white",
-    "link": "https://docs.github.com/free-pro-team@latest/actions"
+    "link": "https://docs.github.com/actions"
   },
   {
     "label": "C",
@@ -93,7 +93,7 @@
   {
     "label": "Csharp",
     "bg_color": "#239120",
-    "logo": "C sharp",
+    "logo": "csharp",
     "logoColor": "white",
     "link": "https://docs.microsoft.com/dotnet/csharp/"
   },
@@ -250,5 +250,40 @@
     "logo": "Unity",
     "logoColor": "white",
     "link": "https://unity.com/"
+  },
+  {
+    "label": "docker",
+    "bg_color": "#1D63ED",
+    "logo": "docker",
+    "logoColor": "white",
+    "link": "https://www.docker.com/"
+  },
+  {
+    "label": "kubernetes",
+    "bg_color": "#326DE6",
+    "logo": "kubernetes",
+    "logoColor": "white",
+    "link": "https://kubernetes.io/"
+  },
+  {
+    "label": "Cilium",
+    "bg_color": "#141A20",
+    "logo": "cilium",
+    "logoColor": "white",
+    "link": "https://cilium.io/"
+  },
+  {
+    "label": "k3s",
+    "bg_color": "#FFC61C",
+    "logo": "k3s",
+    "logoColor": "white",
+    "link": "https://github.com/k3s-io/k3s"
+  },
+  {
+    "label": "Drone",
+    "bg_color": "#00ABE4",
+    "logo": "drone",
+    "logoColor": "white",
+    "link": "https://drone.io/"
   }
 ]
