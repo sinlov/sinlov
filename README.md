@@ -5,7 +5,7 @@
 
 <p>
   <a href="https://git-scm.com/"><img alt="Git" src="https://img.shields.io/badge/-Git-F54D27?logo=Git&logoColor=white&style="/></a>
-  <a href="https://docs.github.com/free-pro-team@latest/actions"><img alt="Github Actions" src="https://img.shields.io/badge/-Github Actions-2088FF?logo=github-actions&logoColor=white&style="/></a>
+  <a href="https://docs.github.com/actions"><img alt="Github Actions" src="https://img.shields.io/badge/-Github Actions-2088FF?logo=github-actions&logoColor=white&style="/></a>
   <a href="https://www.tutorialspoint.com/cprogramming/"><img alt="C" src="https://img.shields.io/badge/-C-A8BACC?logo=C&logoColor=white&style="/></a>
   <a href="https://www.cplusplus.com/"><img alt="Cplusplus" src="https://img.shields.io/badge/-Cplusplus-00599C?logo=C%2B%2B&logoColor=white&style="/></a>
   <a href="https://cmake.org/"><img alt="CMake" src="https://img.shields.io/badge/-CMake-064F8C?logo=CMake&logoColor=white&style="/></a>
@@ -17,7 +17,7 @@
   <a href="https://kotlinlang.org/"><img alt="Kotlin" src="https://img.shields.io/badge/-Kotlin-7F52FF?logo=Kotlin&logoColor=white&style="/></a>
   <a href="https://groovy-lang.org/"><img alt="Groovy" src="https://img.shields.io/badge/-Groovy-4198B8?logo=Apache%20Groovy&logoColor=white&style="/></a>
   <a href="https://gradle.org/"><img alt="Gradle" src="https://img.shields.io/badge/-Gradle-02303A?logo=Gradle&logoColor=white&style="/></a>
-  <a href="https://docs.microsoft.com/dotnet/csharp/"><img alt="Csharp" src="https://img.shields.io/badge/-Csharp-239120?logo=C%20sharp&logoColor=white&style="/></a>
+  <a href="https://docs.microsoft.com/dotnet/csharp/"><img alt="Csharp" src="https://img.shields.io/badge/-Csharp-239120?logo=csharp&logoColor=white&style="/></a>
   <a href="https://dart.dev/"><img alt="Dart" src="https://img.shields.io/badge/-Dart-0175C2?logo=Dart&logoColor=white&style="/></a>
   <a href="https://www.ruby-lang.org/"><img alt="Ruby" src="https://img.shields.io/badge/-Ruby-CC342D?logo=Ruby&logoColor=white&style="/></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"><img alt="html5" src="https://img.shields.io/badge/-html5-E44D26?logo=html5&logoColor=white&style="/></a>
@@ -40,6 +40,11 @@
   <a href="https://flutter.dev/"><img alt="Flutter" src="https://img.shields.io/badge/-Flutter-02569B?logo=Flutter&logoColor=white&style="/></a>
   <a href="https://www.unrealengine.com/"><img alt="Unreal Engine" src="https://img.shields.io/badge/-Unreal Engine-0E1128?logo=Unreal%20Engine&logoColor=white&style="/></a>
   <a href="https://unity.com/"><img alt="Unity" src="https://img.shields.io/badge/-Unity-000000?logo=Unity&logoColor=white&style="/></a>
+  <a href="https://www.docker.com/"><img alt="docker" src="https://img.shields.io/badge/-docker-1D63ED?logo=docker&logoColor=white&style="/></a>
+  <a href="https://kubernetes.io/"><img alt="kubernetes" src="https://img.shields.io/badge/-kubernetes-326DE6?logo=kubernetes&logoColor=white&style="/></a>
+  <a href="https://cilium.io/"><img alt="Cilium" src="https://img.shields.io/badge/-Cilium-141A20?logo=cilium&logoColor=white&style="/></a>
+  <a href="https://github.com/k3s-io/k3s"><img alt="k3s" src="https://img.shields.io/badge/-k3s-FFC61C?logo=k3s&logoColor=white&style="/></a>
+  <a href="https://drone.io/"><img alt="Drone" src="https://img.shields.io/badge/-Drone-00ABE4?logo=drone&logoColor=white&style="/></a>
   
 </p>
 
@@ -92,10 +97,10 @@ Other            52 mins         █▒░░░░░░░░░░░░░�
 </p>
 
 <p>
-  Today is <b>Friday, January 26, 8:02 AM GMT+8</b> <br />
-  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;50d@2x.png" width="20" /> <i>mist</i>
-  <li>temperature : <b>-1.1 °C</b> , feels like  : <b>-1.1 °C</b></br></li>
-  <li>humidity    : <b>100%</b> , wind speed  : <b>1 meter&#x2F;sec</b></br></li>
+  Today is <b>Friday, January 26, 2:50 PM GMT+8</b> <br />
+  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;03d@2x.png" width="20" /> <i>scattered clouds</i>
+  <li>temperature : <b>6.9 °C</b> , feels like  : <b>5.6 °C</b></br></li>
+  <li>humidity    : <b>53%</b> , wind speed  : <b>2 meter&#x2F;sec</b></br></li>
   <li>sun rises at: <b>07:58 AM</b> , sets at: <b>06:33 PM</b></li>
 </p>
 
