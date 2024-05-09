@@ -59,11 +59,11 @@
 <!--START_SECTION:waka-->
 
 ```txt
-YAML             9 hrs 29 mins   ████████░░░░░░░░░░░░░░░░░   32.56 %
-Markdown         5 hrs 35 mins   ████▓░░░░░░░░░░░░░░░░░░░░   19.20 %
-Makefile         4 hrs           ███▒░░░░░░░░░░░░░░░░░░░░░   13.75 %
-Other            3 hrs 41 mins   ███▒░░░░░░░░░░░░░░░░░░░░░   12.68 %
-PowerShell       1 hr 22 mins    █▒░░░░░░░░░░░░░░░░░░░░░░░   04.73 %
+YAML             9 hrs 29 mins   ████████░░░░░░░░░░░░░░░░░   32.18 %
+Markdown         5 hrs 55 mins   █████░░░░░░░░░░░░░░░░░░░░   20.07 %
+Makefile         4 hrs 11 mins   ███▓░░░░░░░░░░░░░░░░░░░░░   14.21 %
+Other            3 hrs 13 mins   ██▓░░░░░░░░░░░░░░░░░░░░░░   10.91 %
+PowerShell       1 hr 22 mins    █▒░░░░░░░░░░░░░░░░░░░░░░░   04.68 %
 ```
 
 <!--END_SECTION:waka-->
