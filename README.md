@@ -50,7 +50,7 @@
 
 <p align="center">
   <a href="https://github.com/sinlov">
-    <img src="https://github-readme-stats.vercel.app/api?username=sinlov&show_icons=true&theme=dracula" />
+    <img src="https://github-readme-stats.vercel.app/api?username=sinlov&show_icons=true&theme=buefy" />
   </a>
 </p>
 
@@ -97,11 +97,11 @@ Other            1 hr 14 mins    █▓░░░░░░░░░░░░░�
 </p>
 
 <p>
-  Today is <b>Thursday, September 5, 8:01 PM GMT+8</b> <br />
-  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;01n@2x.png" width="20" /> <i>clear sky</i>
-  <li>temperature : <b>32.9 °C</b> , feels like  : <b>35.9 °C</b></br></li>
-  <li>humidity    : <b>49%</b> , wind speed  : <b>3 meter&#x2F;sec</b></br></li>
-  <li>sun rises at: <b>06:42 AM</b> , sets at: <b>07:22 PM</b></li>
+  Today is <b>Friday, September 6, 8:03 AM GMT+8</b> <br />
+  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;03d@2x.png" width="20" /> <i>scattered clouds</i>
+  <li>temperature : <b>27.9 °C</b> , feels like  : <b>31.1 °C</b></br></li>
+  <li>humidity    : <b>74%</b> , wind speed  : <b>3 meter&#x2F;sec</b></br></li>
+  <li>sun rises at: <b>06:43 AM</b> , sets at: <b>07:21 PM</b></li>
 </p>
 
 <p align="right">
