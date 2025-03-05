@@ -15,11 +15,13 @@ ENV_COVERAGE_OUT_FOLDER = ${ENV_ROOT}/coverage/
 ENV_NODE_MODULES_FOLDER = ${ENV_ROOT}/node_modules/
 ENV_NODE_MODULES_LOCK_FILE = ${ENV_ROOT}/package-lock.json
 
+.PHONY: utils
 utils:
 	node -v
 	npm -v
 	npm install -g commitizen cz-conventional-changelog conventional-changelog-cli
 
+.PHONY: versionHelp
 versionHelp:
 	@git fetch --tags
 	@echo "project base info"
@@ -32,6 +34,7 @@ versionHelp:
 	@echo "-> check at: ${ENV_MODULE_MANIFEST}:3"
 	@echo " $(shell head -n 3 ${ENV_MODULE_MANIFEST} | tail -n 1)"
 
+.PHONY: tagBefore
 tagBefore: versionHelp
 	@cd ${ENV_MODULE_FOLDER} && conventional-changelog -i ${ENV_MODULE_CHANGELOG} -s --skip-unstable
 	@echo ""
@@ -39,24 +42,31 @@ tagBefore: versionHelp
 	@echo "place check all file, then can add tag like this!"
 	@echo "$$ git tag -a '${ENV_DIST_VERSION}' -m 'message for this tag'"
 
+.PHONY: cleanNpmCache
 cleanNpmCache:
 	npm run clean:rimraf
 
+.PHONY: installGlobal
 installGlobal:
 	npm install rimraf eslint jest codecov --global
 
+.PHONY: install
 install:
 	npm install
 
+.PHONY: installAll
 installAll: utils installGlobal install
 	@echo "=> install all finish"
 
+.PHONY: run
 run:
 	npm start
 
+.PHONY: dev
 dev:
 	npm run dev
 
+.PHONY: help
 help:
 	@echo "node module makefile template"
 	@echo ""
