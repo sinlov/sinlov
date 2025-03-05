@@ -4,6 +4,17 @@ on:
   push:
     branches:
       - main
+      - 'release-*'
+      - '*-feature-*'
+      - '*-enhancement-*'
+      - '*-hotfix-*'
+      - '*-bug-*'
+      - '*-fix-*'
+      - '*-documentation-*'
+      - 'BF-*'
+      - 'FE-*'
+      - 'PU-*'
+      - 'DOC-*'
   schedule:
     # At minute 0 past every 12th hour
     - cron: '0 */12 * * *'
@@ -13,14 +24,45 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: check github context
+        run: |
+          echo "github.run_id: ${{ github.run_id }}"
+          echo "github.run_number: ${{ github.run_number }}"
+          echo "github.run_attempt: ${{ github.run_attempt }}"
+          echo "github.actor_id: ${{ github.actor_id }}"
+          echo ""
+          echo "github.workflow: ${{ github.workflow }}"
+          echo "github.workflow_ref: ${{ github.workflow_ref }}"
+          echo "github.workspace: ${{ github.workspace }}"
+          echo "github.job: ${{ github.job }}"
+          echo ""
+          echo "runner.os: ${{ runner.os }}"
+          echo "runner.arch: ${{ runner.arch }}"
+          echo "runner.temp: ${{ runner.temp }}"
+          echo ""
+          echo " GITHUB_EVENT_NAME ${GITHUB_EVENT_NAME}"
+          echo " github.event_name ${{ github.event_name }}"
+          echo " GITHUB_SHA ${GITHUB_SHA}"
+          echo " GITHUB_REF_TYPE ${GITHUB_REF_TYPE}"
+          echo " github.ref_type ${{ github.ref_type }}"
+          echo " GITHUB_REF ${GITHUB_REF}"
+          echo " github.ref ${{ github.ref }}"
+          echo " GITHUB_REF_NAME ${GITHUB_REF_NAME}"
+          echo " github.ref_name ${{ github.ref_name }}"
+          echo " GITHUB_BASE_REF ${GITHUB_BASE_REF}"
+          echo " github.base_ref ${{ github.base_ref }}"
+          echo " GITHUB_HEAD_REF ${GITHUB_HEAD_REF}"
+          echo " github.head_ref ${{ github.head_ref }}"
+          echo ""
+
       - name: checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v4
       - name: setup node
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
       - name: cache
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         with:
           path: node_modules
           key: ${{ runner.os }}-js-${{ hashFiles('package-lock.json') }}
@@ -30,7 +72,7 @@ jobs:
         run: |
          echo "run npm start date: $(date)"
          npm start
-         echo "run npm finsh date: $(date)"
+         echo "run npm finish date: $(date)"
          sleep 3
         env:
           RUN_MODE: ${{secrets.RUN_MODE}}
@@ -54,6 +96,7 @@ jobs:
          git commit -m "${COMMIT_MSG}"
          git status
       - name: Push by Action
+        if: ${{ ( github.event_name == 'push' && github.ref == 'refs/heads/main' ) || github.base_ref == 'main' }}
         uses: ad-m/github-push-action@v0.6.0 # https://github.com/ad-m/github-push-action#github-action-for-github-push
         with:
           # Token for the repo. Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
