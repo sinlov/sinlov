@@ -4,6 +4,17 @@ on:
   push:
     branches:
       - main
+      - 'release-*'
+      - '*-feature-*'
+      - '*-enhancement-*'
+      - '*-hotfix-*'
+      - '*-bug-*'
+      - '*-fix-*'
+      - '*-documentation-*'
+      - 'BF-*'
+      - 'FE-*'
+      - 'PU-*'
+      - 'DOC-*'
   schedule:
     # At minute 0 past every 12th hour
     - cron: '0 */12 * * *'
@@ -20,7 +31,7 @@ jobs:
         with:
           node-version: '14.x'
       - name: cache
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         with:
           path: node_modules
           key: ${{ runner.os }}-js-${{ hashFiles('package-lock.json') }}
@@ -30,7 +41,7 @@ jobs:
         run: |
          echo "run npm start date: $(date)"
          npm start
-         echo "run npm finsh date: $(date)"
+         echo "run npm finish date: $(date)"
          sleep 3
         env:
           RUN_MODE: ${{secrets.RUN_MODE}}
