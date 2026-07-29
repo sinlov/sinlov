@@ -283,6 +283,7 @@ async function setWeatherInformation(city, appid, lang, units) {
         });
 }
 
+// use https://github.com/stats-organization/github-stats-extended to render github-readme-stats with different theme by time
 async function switchThemeByTime(timezone = "America/Los_Angeles", sun_rise_timestamp = 0, sun_set_timestamp = 0) {
     let sun_rise = 7;
     if (sun_rise_timestamp != 0) {
@@ -296,9 +297,9 @@ async function switchThemeByTime(timezone = "America/Los_Angeles", sun_rise_time
     // console.log('sun_rise', sun_rise, 'sun_set', sun_set, 'currentHour', currentHour, currentHour >= sun_set, currentHour < sun_rise);
     let nightModeApplicable = (currentHour >= sun_set || currentHour < sun_rise) ? true : false;
     if (nightModeApplicable) {
-        DATA.github_readme_stats_url = `https://github-readme-stats.vercel.app/api?username=${DATA.name}&show_icons=true&theme=dracula`
+        DATA.github_readme_stats_url = `https://github-stats-extended.vercel.app/api?username=${DATA.name}&show_icons=true&theme=dracula`
     } else {
-        DATA.github_readme_stats_url = `https://github-readme-stats.vercel.app/api?username=${DATA.name}&show_icons=true&theme=buefy`
+        DATA.github_readme_stats_url = `https://github-stats-extended.vercel.app/api?username=${DATA.name}&show_icons=true&theme=buefy`
     }
 }
 

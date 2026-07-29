@@ -45,12 +45,12 @@
   <a href="https://cilium.io/"><img alt="Cilium" src="https://img.shields.io/badge/-Cilium-141A20?logo=cilium&logoColor=white&style="/></a>
   <a href="https://github.com/k3s-io/k3s"><img alt="k3s" src="https://img.shields.io/badge/-k3s-FFC61C?logo=k3s&logoColor=white&style="/></a>
   <a href="https://drone.io/"><img alt="Drone" src="https://img.shields.io/badge/-Drone-00ABE4?logo=drone&logoColor=white&style="/></a>
-  
+
 </p>
 
 <p align="center">
   <a href="https://github.com/sinlov">
-    <img src="https://github-readme-stats.vercel.app/api?username=sinlov&show_icons=true&theme=buefy" />
+    <img src="https://github-stats-extended.vercel.app/api?username=sinlov&show_icons=true&theme=buefy" />
   </a>
 </p>
 
@@ -69,7 +69,7 @@ Bash         1 hr 44 mins          █▓░░░░░░░░░░░░░
 <!--END_SECTION:waka-->
 
 <p align="center">
-  <img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sinlov&layout=compact&hide=cmake,makefile,batchfile,emacs,css,html,yaml" />
+  <img width="40%" src="https://github-stats-extended.vercel.app/api/top-langs/?username=sinlov&layout=compact&hide=cmake,makefile,batchfile,emacs,css,html,yaml" />
   <img width="56%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sinlov&include_all_commits=true&role=OWNER,ORGANIZATION_MEMBER&count_private=true&show_icons=true" />
 </p>
 
@@ -85,7 +85,7 @@ Bash         1 hr 44 mins          █▓░░░░░░░░░░░░░
     <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=sinlov&theme=transparent" />
   </a>
   <a href="https://github.com/sinlov">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sinlov&card_width=699&hide_border=true&theme=transparent&hide=cmake,makefile,batchfile,emacs,css,html,yaml" />
+    <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=sinlov&card_width=699&hide_border=true&theme=transparent&hide=cmake,makefile,batchfile,emacs,css,html,yaml" />
   </a>
 </p>
 </details>
