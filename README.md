@@ -45,7 +45,7 @@
   <a href="https://cilium.io/"><img alt="Cilium" src="https://img.shields.io/badge/-Cilium-141A20?logo=cilium&logoColor=white&style="/></a>
   <a href="https://github.com/k3s-io/k3s"><img alt="k3s" src="https://img.shields.io/badge/-k3s-FFC61C?logo=k3s&logoColor=white&style="/></a>
   <a href="https://drone.io/"><img alt="Drone" src="https://img.shields.io/badge/-Drone-00ABE4?logo=drone&logoColor=white&style="/></a>
-
+  
 </p>
 
 <p align="center">
@@ -97,11 +97,11 @@ Bash         1 hr 44 mins          █▓░░░░░░░░░░░░░
 </p>
 
 <p>
-  Today is <b>Wednesday, March 5, 1:32 PM GMT+8</b> <br />
-  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;10d@2x.png" width="20" /> <i>light rain</i>
-  <li>temperature : <b>11.9 °C</b> , feels like  : <b>11.5 °C</b></br></li>
-  <li>humidity    : <b>87%</b> , wind speed  : <b>5 meter&#x2F;sec</b></br></li>
-  <li>sun rises at: <b>07:26 AM</b> , sets at: <b>07:04 PM</b></li>
+  Today is <b>Wednesday, July 29, 2:45 PM GMT+8</b> <br />
+  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;02d@2x.png" width="20" /> <i>few clouds</i>
+  <li>temperature : <b>30.9 °C</b> , feels like  : <b>35.1 °C</b></br></li>
+  <li>humidity    : <b>62%</b> , wind speed  : <b>2.37 meter&#x2F;sec</b></br></li>
+  <li>sun rises at: <b>06:19 AM</b> , sets at: <b>08:00 PM</b></li>
 </p>
 
 <p align="right">
