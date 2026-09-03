@@ -54,6 +54,15 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/sinlov">
+    <img src="https://github-stats-extended.vercel.app/api?username=sinlov&show_icons=true&theme=buefy" />
+  </a>
+  <a href="https://github.com/sinlov">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=sinlov&theme=buefy" />
+  </a>
+</p>
+
 <p>Recent coding record</p>
 
 <!--START_SECTION:waka-->
@@ -97,11 +106,11 @@ Other            2 hrs 22 mins         █▓░░░░░░░░░░░�
 </p>
 
 <p>
-  Today is <b>Wednesday, July 29, 2:45 PM GMT+8</b> <br />
-  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;02d@2x.png" width="20" /> <i>few clouds</i>
-  <li>temperature : <b>30.9 °C</b> , feels like  : <b>35.1 °C</b></br></li>
-  <li>humidity    : <b>62%</b> , wind speed  : <b>2.37 meter&#x2F;sec</b></br></li>
-  <li>sun rises at: <b>06:19 AM</b> , sets at: <b>08:00 PM</b></li>
+  Today is <b>Thursday, September 3, 1:21 PM GMT+8</b> <br />
+  My current city <b>Chengdu, CN</b> weather is: <img src="http:&#x2F;&#x2F;openweathermap.org&#x2F;img&#x2F;wn&#x2F;04d@2x.png" width="20" /> <i>overcast clouds</i>
+  <li>temperature : <b>25.9 °C</b> , feels like  : <b>26.1 °C</b></br></li>
+  <li>humidity    : <b>57%</b> , wind speed  : <b>3 meter&#x2F;sec</b></br></li>
+  <li>sun rises at: <b>06:41 AM</b> , sets at: <b>07:25 PM</b></li>
 </p>
 
 <p align="right">
