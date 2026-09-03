@@ -283,7 +283,16 @@ async function setWeatherInformation(city, appid, lang, units) {
         });
 }
 
-// use https://github.com/stats-organization/github-stats-extended to render github-readme-stats with different theme by time
+/**
+ * switchThemeByTime
+ * use https://github.com/stats-organization/github-stats-extended to render github-readme-stats with different theme by time
+ *
+ * use https://github.com/DenverCoder1/github-readme-streak-stats to render github-readme-streak-stats with different theme by time
+ * customize your Streak Stats card with a live preview https://streak-stats.demolab.com
+ * @param {*} timezone
+ * @param {*} sun_rise_timestamp
+ * @param {*} sun_set_timestamp
+ */
 async function switchThemeByTime(timezone = "America/Los_Angeles", sun_rise_timestamp = 0, sun_set_timestamp = 0) {
     let sun_rise = 7;
     if (sun_rise_timestamp != 0) {
@@ -298,8 +307,10 @@ async function switchThemeByTime(timezone = "America/Los_Angeles", sun_rise_time
     let nightModeApplicable = (currentHour >= sun_set || currentHour < sun_rise) ? true : false;
     if (nightModeApplicable) {
         DATA.github_readme_stats_url = `https://github-stats-extended.vercel.app/api?username=${DATA.name}&show_icons=true&theme=dracula`
+        DATA.github_streak_stats_url = `https://github-readme-streak-stats.herokuapp.com/?user=${DATA.name}&theme=dracula`
     } else {
         DATA.github_readme_stats_url = `https://github-stats-extended.vercel.app/api?username=${DATA.name}&show_icons=true&theme=buefy`
+        DATA.github_streak_stats_url = `https://github-readme-streak-stats.herokuapp.com/?user=${DATA.name}&theme=buefy`
     }
 }
 
